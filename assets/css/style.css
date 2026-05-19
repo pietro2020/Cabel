@@ -59,47 +59,55 @@ nav .nav-list > li > a {
     color: black
 }
 
+/* Submenu */
+
 .li-sub-menu {
     position: relative;
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
 .sub-menu {
     position: absolute;
     top: 100%;
     left: 0;
-
     display: none;
-
     width: auto;
     background-color: white;
-
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    border-top: 2px solid #0066ff;
     margin: 0;
-    padding: 0;
-
+    padding: 8px 0;
     z-index: 100;
+    min-width: 160px;
+    border-radius: 0 0 8px 8px;
 }
 
 .sub-menu a {
     display: flex;
     align-items: center;
-    justify-content: center; /* centraliza horizontal */
-    
-    padding: 20px 30px;
-
+    justify-content: flex-start;
+    padding: 12px 24px;
     width: auto;
-
     text-decoration: none;
+    color: #1a1a1a;
+    font-size: 14px;
+    transition: background 0.2s, color 0.2s;
 }
 
 .sub-menu-list {
     list-style-type: none;
-    display: inline;
+    display: block;
     padding: 0;
+    margin: 0;
 }
 
 .sub-menu-list li:hover {
     background-color: #f2f3f4;
+}
+
+.sub-menu-list li:hover a {
+    color: #0066ff;
 }
 
 .li-sub-menu:hover .sub-menu,
@@ -308,16 +316,46 @@ main > h2 {
     color: rgba(0, 0, 0, 0.5)
 }
 
+/*-------------- H2 --------------*/
+
+h2 {
+    margin: 50px 0;
+}
+
 /*-------------- SECTION SOBRE NÓS --------------*/
 
 .sobre-nos {
     display: flex;
     flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+    padding: 30px 0px;
 }
 
 .video-sobre-nos {
-    width: 630px;
-    margin-left: 10px;
+    width: 45%;
+    height: auto;
+    margin-left: 1.5%;
+}
+
+.about {
+    margin-right: 2%;
+}
+
+.about h3 {
+    font-size: 1.6rem;
+    color: #0066ff;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.about p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 24px;
 }
 
 /*-------------- SECTION CABEL É QUALIDADE --------------*/
@@ -325,16 +363,63 @@ main > h2 {
 .cabel-e-qualidade {
     display: flex;
     flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.quantity {
+    margin-left: 2%;
+}
+
+.quantity h3 {
+    font-size: 1.6rem;
+    color: #0066ff;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.quantity p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.logos-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.logos-list li a {
+    display: block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.logos-list li a:hover {
+    transform: scale(1.08);
+    opacity: 0.85;
 }
 
 .img-qualidade {
-    width: 630px;
-    margin-right: 10px;
+    width: 42%;
+    height: auto;
+    margin-right: 1.5%;
 }
 
 .logos-list li a img {
     height: 85px;
     width: 85px;
+    object-fit: contain;
+    pointer-events: none;
 }
 
 /*-------------- SECTION CONFIANÇA, QUALIDADE E CUSTO --------------*/
