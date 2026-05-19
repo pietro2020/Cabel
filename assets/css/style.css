@@ -162,7 +162,7 @@ header img{
     position: absolute;
     top: 0;
     left: 0;
-    object-fit: cover;
+    object-fit: fill;
     z-index: 0;
 }
 
@@ -448,7 +448,11 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+}
+
+.confianca-qualidade-custo .img-limit {
+    overflow-y: hidden;
+    width: 100%;
 }
 
 .confianca-qualidade-custo div h3 {
