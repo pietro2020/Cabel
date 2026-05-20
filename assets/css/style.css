@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #f2f3f4;
     margin: 0;
@@ -435,7 +441,7 @@ h2 {
     background-size: cover;
     background-position: center;
     width: 100%;
-    padding: 15px 0;
+    padding: 15px 0 0 0;
 }
 
 .confianca-qualidade-custo {
@@ -451,8 +457,13 @@ h2 {
 }
 
 .confianca-qualidade-custo .img-limit {
-    overflow-y: hidden;
+    overflow: hidden;
     width: 100%;
+}
+
+.confianca-qualidade-custo p {
+    font-size: 20px;
+    line-height: 30px;
 }
 
 .confianca-qualidade-custo div h3 {
@@ -464,7 +475,8 @@ h2 {
 }
 
 .confianca-qualidade-custo div img {
-  transition: transform 0.3s;
+    width: 100%;
+    transition: transform 0.3s;
 }
 
 .confianca-qualidade-custo div img:hover {
@@ -478,26 +490,127 @@ h2 {
 /*-------------- SECTION UM POUCO MAIS SOBRE A CABEL --------------*/
 
 .um-pouco-mais-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e0e1e5;
+    margin-top: 50px;
     width: 100%;
 }
 
-.um-pouco-mais-sobre .slide{
+.um-pouco-mais-sobre h3 {
+    margin: 30px 0px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+
+.um-pouco-mais-sobre h3 span {
+    color: #0066ff;
+}
+
+.um-pouco-mais-sobre .slider{
     width: 900px;
     height: 450px;
 }
 
 .catalogos {
     display: flex;
+    margin-top: 30px;
 }
 
-.catalogos img {
-    width: 300px;
+.catalogos > div {
+    flex: 1;
+    text-align: center;
 }
+
+.catalogos .img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.catalogos > div:hover .img {
+    transform: translateY(-10px);
+}
+
+.catalogos .div-titulo {
+    background-color: #444;
+    position: relative;
+    z-index: 2;
+    padding: 20px 0;
+    margin-top: -10px;
+}
+
+.catalogos .div-titulo h4 {
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+/*-------------- SECTION PRODUTOS --------------*/
+
+.produtos {
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.produtos h2 {
+    margin-bottom: 40px;
+    margin-top: 25px;
+    font-size: 40px;
+    color: #333333;
+    font-weight: normal;
+}
+
+.produtos-catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+
+.produtos img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px auto;
+    transition: transform 0.3s ease;
+}
+
+.produtos img:hover {
+    transform: scale(1.15);
+}
+
+.produtos h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.produtos p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #444;
+}
+
+.produtos .catalogo-link {
+    font-size: 23px;
+    line-height: 26px;
+    font-weight: 800;
+    letter-spacing: 0px;
+}
+
 
 /*-------------- SECTION SEGURANÇA --------------*/
 
 .seguranca {
-    height: 500px;
+    height: 350px;
+    width: 100%;
 
     background-color: rgb(0, 40, 66);
     background-image: url("https://cabel.com.br/wp-content/uploads/2022/07/funcionario-com-fundo-2.png");
@@ -509,8 +622,266 @@ h2 {
     background-attachment: fixed;
 }
 
+.seguranca {
+    background-color: #002a45;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    gap: 40px;
+}
+
+.seguranca p {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.seguranca h3 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.3;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.seguranca a {
+    display: inline-block;
+    background: white;
+    color: #002a45;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.seguranca a:hover {
+    opacity: 0.8;
+}
+
 /*-------------- SECTION FABRICAS --------------*/
 
+.fabricas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fabricas-list {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.fabricas h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+    letter-spacing: 0.05em;
+}
+
 .fabricas div img {
-    width: 200px;
+    min-width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fabricas div img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+}
+
+.fabricas div p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #444;
+    justify-self: center;
+}
+
+/*-------------- SECTION CONTATO --------------*/
+
+.contato {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    max-width: 1100px;
+    width: 100%;
+    margin: 30px auto 0 auto;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+.telefone {
+    flex: 1;
+    min-width: 260px;
+    margin-top: 30px;
+}
+
+.telefone h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.telefone > p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.telefone h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0066ff;
+    margin-bottom: 6px;
+}
+
+.telefone .numero-telefone {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.tabela {
+    flex: 1;
+    min-width: 260px;
+    background: white;
+    border-radius: 16px;
+    padding: 32px 32px 40px 32px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.tabela h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+}
+
+.tabela p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+.tabela a {
+    display: inline-block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.tabela a:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.tabela a img {
+    width: 180px;
+    margin: 0 auto;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+/*-------------- FOOTER MELHORADO --------------*/
+
+footer {
+    background: linear-gradient(180deg, #0066ff 0%, #0052cc 100%);
+    color: #fff;
+    padding: 70px 80px 40px;
+}
+
+/* container principal */
+footer section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* títulos */
+footer section h5 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 14px;
+}
+
+/* listas */
+footer section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer section ul li a {
+    font-size: 0.92rem;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+/* hover mais elegante */
+footer section ul li a:hover {
+    color: #ffffff;
+    padding-left: 4px;
+}
+
+/* logo */
+footer img {
+    width: 180px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+    display: block;
+}
+
+/* texto de copyright */
+footer > p {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+    margin-bottom: 25px;
+    max-width: 600px;
+}
+
+/* links sociais */
+footer > a {
+    display: inline-block;
+    margin-right: 18px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.65);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+footer > a:hover {
+    color: #ffffff;
+}
+
+/* acessibilidade */
+footer a:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+    border-radius: 4px;
 }
