@@ -36,13 +36,17 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0;  
+    margin: 0;
     padding: 0 60px 0 100px;
 }
 
 .logo-1 {
     width: 261px;
     height: 100px;
+}
+
+.menu-toggle {
+    display: none;
 }
 
 nav {
@@ -56,15 +60,15 @@ nav .nav-list {
     height: 100%;
 }
 
-nav .nav-list > li {
+nav .nav-list>li {
     list-style: none;
 }
 
-nav .nav-list > li:hover {
+nav .nav-list>li:hover {
     background-color: #f2f3f4;
 }
 
-nav .nav-list > li > a {
+nav .nav-list>li>a {
     height: 100%;
     padding: 0 30px;
     color: black
@@ -132,7 +136,7 @@ nav .nav-list > li > a {
     align-items: center;
 }
 
-header img{
+header img {
     -webkit-user-drag: none;
     pointer-events: none;
 }
@@ -281,7 +285,7 @@ header img{
 
 /*-------------- SLIDES VIDEO --------------*/
 
-.video-slide{
+.video-slide {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -289,7 +293,7 @@ header img{
 
 /*-------------- SLIDES INDICADORES --------------*/
 
-.indicadores{
+.indicadores {
     position: absolute;
     bottom: 20px;
     width: 100%;
@@ -299,7 +303,7 @@ header img{
     z-index: 10;
 }
 
-.dot{
+.dot {
     width: 40px;
     height: 4px;
     border-radius: 10px;
@@ -309,7 +313,7 @@ header img{
 }
 
 /* slide ativo */
-.dot.active{
+.dot.active {
     background: #0066ff;
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(0, 102, 255, 0.5);
@@ -323,7 +327,7 @@ main {
     align-items: center;
 }
 
-main > h2 {
+main>h2 {
     color: rgba(0, 0, 0, 0.5)
 }
 
@@ -510,7 +514,7 @@ h2 {
     color: #0066ff;
 }
 
-.um-pouco-mais-sobre .slider{
+.um-pouco-mais-sobre .slider {
     width: 900px;
     height: 450px;
 }
@@ -520,7 +524,7 @@ h2 {
     margin-top: 30px;
 }
 
-.catalogos > div {
+.catalogos>div {
     flex: 1;
     text-align: center;
 }
@@ -531,7 +535,7 @@ h2 {
     transition: transform 0.3s ease;
 }
 
-.catalogos > div:hover .img {
+.catalogos>div:hover .img {
     transform: translateY(-10px);
 }
 
@@ -736,7 +740,7 @@ h2 {
     margin-bottom: 12px;
 }
 
-.telefone > p {
+.telefone>p {
     font-size: 0.95rem;
     color: #666;
     margin-bottom: 24px;
@@ -794,25 +798,24 @@ h2 {
     pointer-events: none;
 }
 
-/*-------------- FOOTER MELHORADO --------------*/
+/*-------------- FOOTER --------------*/
 
 footer {
-    background: linear-gradient(180deg, #0066ff 0%, #0052cc 100%);
+    background-color: #0066ff;
     color: #fff;
     padding: 70px 80px 40px;
 }
 
-/* container principal */
 footer section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding-bottom: 40px;
     margin-bottom: 40px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* títulos */
 footer section h5 {
     font-size: 0.8rem;
     font-weight: 700;
@@ -822,7 +825,6 @@ footer section h5 {
     margin-bottom: 14px;
 }
 
-/* listas */
 footer section ul {
     list-style: none;
     padding: 0;
@@ -840,13 +842,11 @@ footer section ul li a {
     position: relative;
 }
 
-/* hover mais elegante */
 footer section ul li a:hover {
     color: #ffffff;
     padding-left: 4px;
 }
 
-/* logo */
 footer img {
     width: 180px;
     object-fit: contain;
@@ -856,8 +856,7 @@ footer img {
     display: block;
 }
 
-/* texto de copyright */
-footer > p {
+footer>p {
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.6;
@@ -865,8 +864,7 @@ footer > p {
     max-width: 600px;
 }
 
-/* links sociais */
-footer > a {
+footer>a {
     display: inline-block;
     margin-right: 18px;
     font-size: 0.9rem;
@@ -875,13 +873,529 @@ footer > a {
     transition: 0.2s ease;
 }
 
-footer > a:hover {
+footer>a:hover {
     color: #ffffff;
 }
 
-/* acessibilidade */
-footer a:focus-visible {
-    outline: 2px solid #fff;
-    outline-offset: 3px;
-    border-radius: 4px;
+
+/* ============================================================
+   RESPONSIVE — Cabel
+   Aplica abaixo de 1024px.
+   ============================================================ */
+
+/* ---- 1024px: tablet largo ---- */
+@media (max-width: 1024px) {
+
+    .img.nav {
+        padding: 0 30px 0 30px;
+    }
+
+    .logo-1 {
+        width: 200px;
+        height: 80px;
+    }
+
+    nav .nav-list>li>a {
+        padding: 0 16px;
+    }
+
+    .slider {
+        height: 300px;
+    }
+
+    .slide-text {
+        left: 28%;
+    }
+
+    .conteudo.slide-1 .homem {
+        left: 46%;
+    }
+
+    .sobre-nos {
+        gap: 30px;
+        padding: 0 20px 30px;
+    }
+
+    .video-sobre-nos {
+        width: 48%;
+    }
+
+    .cabel-e-qualidade {
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .img-qualidade {
+        width: 46%;
+    }
+
+    /* Confiança / Qualidade / Custo */
+    .confianca-qualidade-custo div h3 {
+        font-size: 20px;
+    }
+
+    .confianca-qualidade-custo p {
+        font-size: 16px;
+    }
+
+    /* Slider secundário */
+    .um-pouco-mais-sobre .slider {
+        width: 100%;
+        height: 380px;
+    }
+
+    .um-pouco-mais-sobre .slider .video-slide {
+        object-fit: contain;
+        background-color: #000;
+    }
+
+    /* Produtos */
+    .produtos-catalogo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    /* Fábricas */
+    .fabricas-list {
+        flex-direction: row;
+    }
+
+    .fabricas-list div img {
+        height: 200px;
+    }
+
+    /* Segurança */
+    .seguranca {
+        padding: 50px 40px;
+    }
+
+    .seguranca h3 {
+        font-size: 22px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 50px 40px 30px;
+    }
+}
+
+
+/* ---- 768px: tablet ---- */
+@media (max-width: 768px) {
+
+    .contatos {
+        font-size: 11px;
+        margin: 8px 12px;
+    }
+
+    /* Header — hamburguer */
+    .img.nav {
+        height: 70px;
+        padding: 0 20px;
+        align-items: center;
+        position: relative;
+    }
+
+    .logo-1 {
+        width: 160px;
+        height: 60px;
+    }
+
+    /* Menu hamburguer */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        cursor: pointer;
+        padding: 8px;
+        background: none;
+        border: none;
+        z-index: 200;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background: #1a1a1a;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 260px;
+        height: 100vh;
+        background: white;
+        box-shadow: -4px 0 24px rgba(0, 0, 0, 0.12);
+        z-index: 300;
+        transition: right 0.35s ease;
+        padding-top: 80px;
+    }
+
+    nav.open {
+        right: 0;
+    }
+
+    nav .nav-list {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav .nav-list>li {
+        width: 100%;
+        border-bottom: 1px solid #f2f3f4;
+    }
+
+    nav .nav-list>li>a {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 16px 24px;
+        font-size: 15px;
+        height: auto;
+    }
+
+    /* Submenu adaptado */
+    .li-sub-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sub-menu {
+        position: static;
+        display: block;
+        box-shadow: none;
+        border-top: none;
+        border-left: 3px solid #0066ff;
+        border-radius: 0;
+        margin-left: 24px;
+        padding: 4px 0;
+        min-width: unset;
+        width: calc(100% - 24px);
+    }
+
+    .sub-menu a {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    /* Overlay escuro ao abrir menu */
+    .nav-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 299;
+    }
+
+    .nav-overlay.open {
+        display: block;
+    }
+
+    /* Slider principal */
+    .slider {
+        height: 220px;
+    }
+
+    /* Slide 1 — oculta elementos decorativos que quebram layout */
+    .conteudo.slide-1 .fio,
+    .conteudo.slide-1 .fio-2,
+    .conteudo.slide-1 .fio-3,
+    .conteudo.slide-1 .fio-4,
+    .conteudo.slide-1 .fio-5,
+    .conteudo.slide-1 .fio-6,
+    .conteudo.slide-1 .fio-7,
+    .conteudo.slide-1 .fio-8,
+    .conteudo.slide-1 .fio-9,
+    .conteudo.slide-1 .fio-10,
+    .conteudo.slide-1 .fio-11 {
+        display: none;
+    }
+
+    .conteudo.slide-1 .homem {
+        left: auto;
+        right: 0;
+        height: 90%;
+        top: 10%;
+    }
+
+    .slide-text {
+        left: 5%;
+        top: 30%;
+    }
+
+    .slide-text h1 {
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+
+    /* H2 principal */
+    main>h2 {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 20px;
+        margin: 30px 0;
+    }
+
+    /* Sobre nós — empilha */
+    .sobre-nos {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px 20px;
+        gap: 20px;
+    }
+
+    .video-sobre-nos {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .about {
+        margin-right: 0;
+    }
+
+    /* Cabel é qualidade — empilha (imagem vai para baixo) */
+    .cabel-e-qualidade {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .quantity {
+        margin-left: 0;
+    }
+
+    .img-qualidade {
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .logos-list li a img {
+        height: 64px;
+        width: 64px;
+    }
+
+    /* Confiança / Qualidade / Custo */
+    .confianca-qualidade-custo {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+
+    .confianca-qualidade-custo div {
+        flex: 1 1 33%;
+        min-width: 100px;
+    }
+
+    .confianca-qualidade-custo div h3 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .confianca-qualidade-custo p {
+        font-size: 12px;
+        text-align: center;
+        padding: 5px 4px;
+    }
+
+    /* Slider secundário */
+    .um-pouco-mais-sobre .slider {
+        height: 350px;
+    }
+
+    /* Catálogos */
+    .catalogos {
+        flex-wrap: wrap;
+    }
+
+    .catalogos>div {
+        flex: 1 1 50%;
+        min-width: 50%;
+    }
+
+    /* Produtos */
+    .produtos-catalogo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .produtos h2 {
+        font-size: 28px;
+    }
+
+    /* Segurança */
+    .seguranca {
+        flex-direction: column;
+        padding: 40px 24px;
+        text-align: center;
+        gap: 20px;
+        background-attachment: fixed;
+    }
+
+    .seguranca h3 {
+        font-size: 20px;
+        max-width: 100%;
+    }
+
+    /* Fábricas */
+    .fabricas-list {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .fabricas div img {
+        height: 280px;
+    }
+
+    /* Contato */
+    .contato {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 24px;
+    }
+
+    .telefone,
+    .tabela {
+        min-width: unset;
+        width: 80%;
+        align-self: center;
+    }
+
+    .telefone h2 {
+        font-size: 1.4rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 40px 24px 30px;
+    }
+
+    footer section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+
+/* ---- 480px: mobile pequeno ---- */
+@media (max-width: 480px) {
+
+    /* Header */
+    .img.nav {
+        height: 60px;
+        padding: 0 16px;
+    }
+
+    .logo-1 {
+        width: 130px;
+        height: 50px;
+    }
+
+    /* Slider */
+    .slider {
+        height: 154px;
+    }
+
+    .slide-text h1 {
+        font-size: 1.1rem;
+    }
+
+    /* Sobre nós */
+    .about h3 {
+        font-size: 1.3rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+
+    /* Qualidade */
+    .quantity h3 {
+        font-size: 1.3rem;
+    }
+
+    .quantity p {
+        font-size: 0.9rem;
+    }
+
+    .img-qualidade {
+        width: 95%;
+    }
+
+    .logos-list li a img {
+        height: 52px;
+        width: 52px;
+    }
+
+    /* Confiança / Qualidade / Custo */
+    .confianca-qualidade-custo div h3 {
+        font-size: 12px;
+    }
+
+    .confianca-qualidade-custo p {
+        font-size: 11px;
+    }
+
+    /* Slider secundário */
+    .um-pouco-mais-sobre .slider {
+        height: 205px;
+    }
+
+    /* Catálogos: 1 coluna */
+    .catalogos>div {
+        flex: 0 1 70%;
+        margin: 0 auto;
+    }
+
+    /* Produtos: 1 coluna */
+    .produtos-catalogo {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .produtos h2 {
+        font-size: 22px;
+    }
+
+    .produtos .catalogo-link {
+        font-size: 18px;
+    }
+
+    /* Segurança */
+    .seguranca {
+        height: auto;
+        padding: 36px 16px;
+    }
+
+    .seguranca h3 {
+        font-size: 17px;
+    }
+
+    /* Fábricas */
+    .fabricas div img {
+        height: 160px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 32px 16px 24px;
+    }
+
+    footer section {
+        flex-direction: column;
+        gap: 40px;
+        padding-left: 35px;
+    }
+
+    footer img {
+        width: 140px;
+    }
+
+    footer>p {
+        font-size: 0.8rem;
+    }
 }

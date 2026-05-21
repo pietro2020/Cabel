@@ -78,3 +78,18 @@ function criarSlider(sliderSelector, tempo = 6200){
 
 criarSlider('.slider');
 criarSlider('.slider-2');
+
+
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+const overlay = document.querySelector('.nav-overlay');
+
+toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    overlay.classList.toggle('open');
+});
+
+overlay.addEventListener('click', () => {
+    nav.classList.remove('open');
+    overlay.classList.remove('open');
+});
