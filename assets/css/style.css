@@ -2,39 +2,39 @@
 
 
 :root {
-  /* ===== Base ===== */
-  --color-white: rgba(255, 255, 255, 1);
-  --color-black: rgba(0, 0, 0, 1);
+    /* ===== Base ===== */
+    --color-white: rgba(255, 255, 255, 1);
+    --color-black: rgba(0, 0, 0, 1);
 
-  /* ===== Backgrounds ===== */
-  --bg-light: rgba(242, 243, 244, 1);
-  --bg-light-alt: rgba(224, 225, 229, 1);
+    /* ===== Backgrounds ===== */
+    --bg-light: rgba(242, 243, 244, 1);
+    --bg-light-alt: rgba(224, 225, 229, 1);
 
-  /* ===== Text ===== */
-  --text-primary: rgba(68, 68, 68, 1);
-  --text-secondary: rgba(102, 102, 102, 1);
+    /* ===== Text ===== */
+    --text-primary: rgba(68, 68, 68, 1);
+    --text-secondary: rgba(102, 102, 102, 1);
 
-  /* ===== Brand / Accent ===== */
-  --primary: rgba(33, 56, 100, 1);
-  --primary-dark: rgba(0, 42, 69, 1);
+    /* ===== Brand / Accent ===== */
+    --primary: rgba(33, 56, 100, 1);
+    --primary-dark: rgba(0, 42, 69, 1);
 
-  /* ===== Shadows / Borders ===== */
-  --shadow-soft: rgba(0, 0, 0, 0.08);
-  --shadow-light: rgba(0, 0, 0, 0.12);
-  --shadow-medium: rgba(0, 0, 0, 0.2);
-  --shadow-dark: rgba(0, 0, 0, 0.4);
+    /* ===== Shadows / Borders ===== */
+    --shadow-soft: rgba(0, 0, 0, 0.08);
+    --shadow-light: rgba(0, 0, 0, 0.12);
+    --shadow-medium: rgba(0, 0, 0, 0.2);
+    --shadow-dark: rgba(0, 0, 0, 0.4);
 
-  /* ===== Overlay ===== */
-  --overlay-dark: rgba(0, 0, 0, 0.5);
+    /* ===== Overlay ===== */
+    --overlay-dark: rgba(0, 0, 0, 0.5);
 
-  /* ===== Primary Transparencies ===== */
-  --primary-alpha: rgba(0, 102, 255, 0.35);
-  --primary-alpha-active: rgba(0, 102, 255, 0.4);
+    /* ===== Primary Transparencies ===== */
+    --primary-alpha: rgba(0, 102, 255, 0.35);
+    --primary-alpha-active: rgba(0, 102, 255, 0.4);
 
-  /* ===== White Transparencies ===== */
-  --white-alpha-soft: rgba(255, 255, 255, 0.15);
-  --white-alpha-medium: rgba(255, 255, 255, 0.6);
-  --white-alpha-strong: rgba(255, 255, 255, 0.7); /* junta 0.65 + 0.75 */
+    /* ===== White Transparencies ===== */
+    --white-alpha-soft: rgba(255, 255, 255, 0.15);
+    --white-alpha-medium: rgba(255, 255, 255, 0.6);
+    --white-alpha-strong: rgba(255, 255, 255, 0.7);
 }
 
 
@@ -58,31 +58,54 @@ body {
 
 .contatos {
     font-size: 12px;
+    font-weight: 500;
     margin: 10px 20px;
+}
+
+.contatos span {
+    font-weight: 300;
 }
 
 /*-------------- HEADER NAVS --------------*/
 
 header {
-    background-color: white;
+    background-color: var(--color-white);
     position: sticky;
     top: 0;
     z-index: 101;
+    height: 111px;
+    transition: height 0.35s ease,
+        width 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+header.scrolled {
+    height: 100px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+    margin-left: calc(-8px);
+    margin-right: calc(-8px);
+    width: calc(100% + 16px);
+}
+
+header.scrolled .img.nav {
+    padding: 0 60px 0 100px;
 }
 
 .img.nav {
-    height: 111px;
-    background-color: white;
+    height: 100%;
+    background-color: var(--color-white);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
     padding: 0 60px 0 100px;
+    transition: padding 0.35s ease;
 }
 
 .logo-1 {
-    width: 261px;
-    height: 100px;
+    width: auto;
+    height: 95%;
+    transition: height 0.35s ease;
 }
 
 .menu-toggle {
@@ -111,7 +134,7 @@ nav .nav-list>li:hover {
 nav .nav-list>li>a {
     height: 100%;
     padding: 0 30px;
-    color: black;
+    color: var(--color-black);
     font-size: 18px;
     font-weight: 500;
 }
@@ -130,7 +153,7 @@ nav .nav-list>li>a {
     left: 0;
     display: none;
     width: auto;
-    background-color: white;
+    background-color: var(--color-white);
     box-shadow: 0 8px 24px var(--shadow-medium);
     border-top: 2px solid var(--primary);
     margin: 0;
@@ -225,7 +248,14 @@ header img {
 .slide-text {
     position: absolute;
     z-index: 1;
-    left: 35%;
+    left: 23%;
+    top: 7%;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 0px;
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--primary);
 }
 
 .conteudo.slide-1 .homem {
@@ -591,7 +621,7 @@ h2 {
 
 .catalogos .div-titulo h4 {
     margin: 0;
-    color: white;
+    color: var(--color-white);
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
@@ -669,7 +699,7 @@ h2 {
 }
 
 .seguranca {
-    color: white;
+    color: var(--color-white);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -843,6 +873,11 @@ h2 {
 footer {
     background-color: var(--primary);
     padding: 70px 80px 40px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    justify-content: center;
 }
 
 footer section {
@@ -887,9 +922,10 @@ footer section ul li a:hover {
 }
 
 footer img {
-    width: 180px;
+    width: 300px;
     object-fit: contain;
     margin-bottom: 20px;
+    margin: 0 auto;
     filter: brightness(0) invert(1);
     opacity: 0.9;
     display: block;
@@ -899,7 +935,7 @@ footer>p {
     font-size: 0.85rem;
     color: var(--white-alpha-medium);
     line-height: 1.6;
-    margin-bottom: 25px;
+    margin: 20px auto;
     max-width: 600px;
 }
 
@@ -924,10 +960,6 @@ footer>a:hover {
 
 /* ---- 1024px: tablet largo ---- */
 @media (max-width: 1024px) {
-
-    .img.nav {
-        padding: 0 30px 0 30px;
-    }
 
     .logo-1 {
         width: 200px;
@@ -1028,8 +1060,11 @@ footer>a:hover {
     }
 
     /* Header — hamburguer */
-    .img.nav {
+    header {
         height: 70px;
+    }
+
+    .img.nav {
         padding: 0 20px;
         align-items: center;
         position: relative;
@@ -1324,8 +1359,11 @@ footer>a:hover {
 @media (max-width: 480px) {
 
     /* Header */
-    .img.nav {
+    header {
         height: 60px;
+    }
+
+    .img.nav {
         padding: 0 16px;
     }
 
@@ -1428,6 +1466,7 @@ footer>a:hover {
         flex-direction: column;
         gap: 40px;
         padding-left: 35px;
+        text-align: left;
     }
 
     footer img {

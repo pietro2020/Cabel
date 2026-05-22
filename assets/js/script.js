@@ -93,3 +93,16 @@ overlay.addEventListener('click', () => {
     nav.classList.remove('open');
     overlay.classList.remove('open');
 });
+
+const header = document.getElementById('header');
+const content = document.querySelector('.content');
+
+window.addEventListener('scroll', () => {
+    if (window.innerWidth < 1024) return;
+
+    if (window.scrollY > 30) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
