@@ -17,7 +17,8 @@
 }
 
 .about {
-    margin-right: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .about h3 {
@@ -81,10 +82,6 @@
     .video-sobre-nos {
         width: 100%;
         margin-left: 0;
-    }
-
-    .about {
-        margin-right: 0;
     }
 }
 

@@ -11,7 +11,8 @@
 }
 
 .quantity {
-    margin-left: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .quantity h3 {
@@ -105,10 +106,6 @@
         align-items: center;
         padding: 20px;
         gap: 20px;
-    }
-
-    .quantity {
-        margin-left: 0;
     }
 
     .img-qualidade {
