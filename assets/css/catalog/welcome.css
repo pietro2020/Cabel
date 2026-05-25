@@ -1,0 +1,100 @@
+.bem-vindo {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    overflow: hidden;
+    background-color: #0a1628;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+.bem-vindo-esquerda,
+.bem-vindo-direita {
+    position: relative;
+    z-index: 1;
+    color: white;
+    max-width: 320px;
+}
+
+.bem-vindo-esquerda h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.bem-vindo-esquerda p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.bem-vindo-esquerda a {
+    display: inline-block;
+    padding: 10px 28px;
+    border-radius: 999px;
+    background-color: #1a2e4a;
+    color: white;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    transition: background 0.2s ease;
+}
+
+.bem-vindo-esquerda a:hover {
+    background-color: #0066ff;
+}
+
+.bem-vindo-direita p {
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.25;
+    text-align: right;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .bem-vindo {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 24px;
+        padding: 40px 24px;
+        height: auto;
+    }
+
+    .bem-vindo-direita p {
+        font-size: 1.3rem;
+        text-align: left;
+    }
+
+    .bem-vindo-esquerda,
+    .bem-vindo-direita {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .bem-vindo-esquerda h3 {
+        font-size: 1.3rem;
+    }
+
+    .bem-vindo-direita p {
+        font-size: 1.1rem;
+    }
+}

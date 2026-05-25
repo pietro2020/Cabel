@@ -1,0 +1,33 @@
+/*-------------- MAIN --------------*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main>h2 {
+    color: var(--shadow-dark);
+}
+
+/*-------------- H2 --------------*/
+
+h2 {
+    margin: 50px 0;
+}
+
+/* ============================================================
+   RESPONSIVE — Cabel
+   Aplica abaixo de 1024px.
+   ============================================================ */
+
+/* ---- 768px: tablet ---- */
+@media (max-width: 768px) {
+    /* H2 principal */
+    main>h2 {
+        font-size: 1rem;
+        text-align: center;
+        padding: 0 20px;
+        margin: 30px 0;
+    }
+}

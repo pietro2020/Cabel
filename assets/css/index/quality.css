@@ -1,0 +1,144 @@
+/*-------------- SECTION CABEL É QUALIDADE --------------*/
+
+.cabel-e-qualidade {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+    padding: 30px 0px;
+}
+
+.quantity {
+    margin-left: 2%;
+}
+
+.quantity h3 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.quantity p {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.logos-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.logos-list li a {
+    display: block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.logos-list li a:hover {
+    transform: scale(1.08);
+    opacity: 0.85;
+}
+
+.img-qualidade {
+    width: 42%;
+    height: auto;
+    margin-right: 1.5%;
+}
+
+.logos-list li a img {
+    height: 85px;
+    width: 85px;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.quantity h3,
+.quantity p {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.quantity p {
+    transition-delay: 0.15s;
+}
+
+.quantity.visivel h3,
+.quantity.visivel p,
+.quantity.visivel ul {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ============================================================
+   RESPONSIVE — Cabel
+   Aplica abaixo de 1024px.
+   ============================================================ */
+
+/* ---- 1024px: tablet largo ---- */
+@media (max-width: 1024px) {
+    .cabel-e-qualidade {
+        gap: 30px;
+        padding: 30px 20px;
+    }
+
+    .img-qualidade {
+        width: 46%;
+    }
+}
+
+/* ---- 768px: tablet ---- */
+@media (max-width: 768px) {
+    /* Cabel é qualidade — empilha (imagem vai para baixo) */
+    .cabel-e-qualidade {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .quantity {
+        margin-left: 0;
+    }
+
+    .img-qualidade {
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .logos-list li a img {
+        height: 64px;
+        width: 64px;
+    }
+}
+
+/* ---- 480px: mobile pequeno ---- */
+@media (max-width: 480px) {
+    /* Qualidade */
+    .quantity h3 {
+        font-size: 1.3rem;
+    }
+
+    .quantity p {
+        font-size: 0.9rem;
+    }
+
+    .img-qualidade {
+        width: 95%;
+    }
+
+    .logos-list li a img {
+        height: 52px;
+        width: 52px;
+    }
+}

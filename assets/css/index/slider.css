@@ -1,0 +1,256 @@
+/*-------------- SLIDES --------------*/
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+    user-select: none;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/*-------------- SLIDES 1 --------------*/
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: fill;
+    z-index: 0;
+}
+
+.conteudo.slide-1 {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.slide-text {
+    position: absolute;
+    z-index: 1;
+    left: 23%;
+    top: 7%;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 0px;
+    font-weight: 900;
+    font-size: 30px;
+    color: var(--primary);
+}
+
+.conteudo.slide-1 .homem {
+    position: absolute;
+    z-index: 1;
+    height: 95%;
+    top: 5%;
+    left: 50%;
+}
+
+.conteudo.slide-1 .fio {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    top: 5%;
+    left: 3%
+}
+
+.conteudo.slide-1 .fio-2 {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    top: 10%;
+    left: -2%
+}
+
+.conteudo.slide-1 .fio-3 {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    top: 10%;
+    left: 7%;
+}
+
+.conteudo.slide-1 .fio-4 {
+    position: absolute;
+    z-index: 1;
+    height: 90%;
+    top: 28%;
+    left: 20%;
+}
+
+.conteudo.slide-1 .fio-5 {
+    position: absolute;
+    z-index: 1;
+    height: 75%;
+    top: 40%;
+    left: 26%;
+}
+
+.conteudo.slide-1 .fio-6 {
+    position: absolute;
+    z-index: 1;
+    height: 78%;
+    top: 24%;
+    left: 71.5%;
+}
+
+.conteudo.slide-1 .fio-7 {
+    position: absolute;
+    z-index: 1;
+    height: 80%;
+    top: 25%;
+    left: 76.5%;
+}
+
+.conteudo.slide-1 .fio-8 {
+    position: absolute;
+    z-index: 1;
+    height: 80%;
+    top: 30%;
+    left: 78.6%;
+}
+
+.conteudo.slide-1 .fio-9 {
+    position: absolute;
+    z-index: 1;
+    height: 80%;
+    top: 37%;
+    left: 84%;
+}
+
+.conteudo.slide-1 .fio-10 {
+    position: absolute;
+    z-index: 1;
+    height: 75%;
+    top: 38%;
+    left: 84%;
+}
+
+.conteudo.slide-1 .fio-11 {
+    position: absolute;
+    z-index: 1;
+    height: 80%;
+    top: 38%;
+    left: 95.5%;
+}
+
+/*-------------- SLIDES VIDEO --------------*/
+
+.video-slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*-------------- SLIDES INDICADORES --------------*/
+
+.indicadores {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.dot {
+    width: 40px;
+    height: 4px;
+    border-radius: 10px;
+    background: var(--primary-alpha);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* slide ativo */
+.dot.active {
+    background: var(--primary);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--primary-alpha-active);
+}
+
+/* ============================================================
+   RESPONSIVE — Cabel
+   Aplica abaixo de 1024px.
+   ============================================================ */
+
+/* ---- 1024px: tablet largo ---- */
+@media (max-width: 1024px) {
+    .slider {
+        height: 300px;
+    }
+
+    .slide-text {
+        left: 28%;
+    }
+
+    .conteudo.slide-1 .homem {
+        left: 46%;
+    }
+}
+
+/* ---- 768px: tablet ---- */
+@media (max-width: 768px) {
+    /* Slider principal */
+    .slider {
+        height: 220px;
+    }
+
+    /* Slide 1 — oculta elementos decorativos que quebram layout */
+    .conteudo.slide-1 .fio,
+    .conteudo.slide-1 .fio-2,
+    .conteudo.slide-1 .fio-3,
+    .conteudo.slide-1 .fio-4,
+    .conteudo.slide-1 .fio-5,
+    .conteudo.slide-1 .fio-6,
+    .conteudo.slide-1 .fio-7,
+    .conteudo.slide-1 .fio-8,
+    .conteudo.slide-1 .fio-9,
+    .conteudo.slide-1 .fio-10,
+    .conteudo.slide-1 .fio-11 {
+        display: none;
+    }
+
+    .conteudo.slide-1 .homem {
+        left: auto;
+        right: 0;
+        height: 90%;
+        top: 10%;
+    }
+
+    .slide-text {
+        left: 5%;
+        top: 30%;
+    }
+
+    .slide-text h1 {
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+}
+
+/* ---- 480px: mobile pequeno ---- */
+@media (max-width: 480px) {
+    /* Slider */
+    .slider {
+        height: 154px;
+    }
+
+    .slide-text h1 {
+        font-size: 1.1rem;
+    }
+}

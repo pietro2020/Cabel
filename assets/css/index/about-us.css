@@ -1,0 +1,101 @@
+/*-------------- SECTION SOBRE NÓS --------------*/
+
+.sobre-nos {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+    padding: 0px 0px 30px 0px;
+}
+
+.video-sobre-nos {
+    width: 45%;
+    height: auto;
+    margin-left: 1.5%;
+}
+
+.about {
+    margin-right: 2%;
+}
+
+.about h3 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.about p {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.about h3,
+.about p {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.about p {
+    transition-delay: 0.15s;
+}
+
+.sobre-nos.visivel h3,
+.sobre-nos.visivel p {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ============================================================
+   RESPONSIVE — Cabel
+   Aplica abaixo de 1024px.
+   ============================================================ */
+
+/* ---- 1024px: tablet largo ---- */
+@media (max-width: 1024px) {
+    .sobre-nos {
+        gap: 30px;
+        padding: 0 20px 30px;
+    }
+
+    .video-sobre-nos {
+        width: 48%;
+    }
+}
+
+/* ---- 768px: tablet ---- */
+@media (max-width: 768px) {
+    /* Sobre nós — empilha */
+    .sobre-nos {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px 20px;
+        gap: 20px;
+    }
+
+    .video-sobre-nos {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .about {
+        margin-right: 0;
+    }
+}
+
+/* ---- 480px: mobile pequeno ---- */
+@media (max-width: 480px) {
+    /* Sobre nós */
+    .about h3 {
+        font-size: 1.3rem;
+    }
+
+    .about p {
+        font-size: 0.9rem;
+    }
+}

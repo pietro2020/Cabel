@@ -1,0 +1,96 @@
+/*-------------- SECTION PRODUTOS --------------*/
+
+.produtos {
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.produtos h2 {
+    margin-bottom: 40px;
+    margin-top: 25px;
+    font-size: 40px;
+    color: var(--text-primary);
+    font-weight: normal;
+}
+
+.produtos-catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+}
+
+.produtos img {
+    width: 70%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px auto;
+    transition: transform 0.3s ease;
+}
+
+.produtos img:hover {
+    transform: scale(1.15);
+}
+
+.produtos h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.produtos p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--text-primary);
+}
+
+.produtos .catalogo-link {
+    font-size: 23px;
+    line-height: 26px;
+    font-weight: 800;
+    letter-spacing: 0px;
+}
+
+/* ============================================================
+   RESPONSIVE — Cabel
+   Aplica abaixo de 1024px.
+   ============================================================ */
+
+/* ---- 1024px: tablet largo ---- */
+@media (max-width: 1024px) {
+    /* Produtos */
+    .produtos-catalogo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* ---- 768px: tablet ---- */
+@media (max-width: 768px) {
+    /* Produtos */
+    .produtos-catalogo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .produtos h2 {
+        font-size: 28px;
+    }
+}
+
+/* ---- 480px: mobile pequeno ---- */
+@media (max-width: 480px) {
+    /* Produtos: 1 coluna */
+    .produtos-catalogo {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .produtos h2 {
+        font-size: 22px;
+    }
+
+    .produtos .catalogo-link {
+        font-size: 18px;
+    }
+}

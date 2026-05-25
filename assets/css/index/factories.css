@@ -1,0 +1,83 @@
+/*-------------- SECTION FABRICAS --------------*/
+
+.fabricas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fabricas-list {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.fabricas h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    letter-spacing: 0.05em;
+}
+
+.fabricas div img {
+    min-width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 4px 16px var(--shadow-light);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fabricas div img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 28px var(--shadow-medium);
+}
+
+.fabricas div p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    justify-self: center;
+}
+
+/* ============================================================
+   RESPONSIVE — Cabel
+   Aplica abaixo de 1024px.
+   ============================================================ */
+
+/* ---- 1024px: tablet largo ---- */
+@media (max-width: 1024px) {
+    /* Fábricas */
+    .fabricas-list {
+        flex-direction: row;
+    }
+
+    .fabricas-list div img {
+        height: 200px;
+    }
+}
+
+/* ---- 768px: tablet ---- */
+@media (max-width: 768px) {
+    /* Fábricas */
+    .fabricas-list {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .fabricas div img {
+        height: 280px;
+    }
+}
+
+/* ---- 480px: mobile pequeno ---- */
+@media (max-width: 480px) {
+    /* Fábricas */
+    .fabricas div img {
+        height: 160px;
+    }
+}
