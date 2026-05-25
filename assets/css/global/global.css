@@ -235,8 +235,6 @@ footer {
     position: absolute;
     width: 100%;
     left: 0;
-    text-align: center;
-    justify-content: center;
 }
 
 footer section {
@@ -252,7 +250,7 @@ footer section {
 .empresa-footer,
 .produtos-footer,
 .contatos-footer {
-    width: 160px;
+    width: 140px;
 }
 
 footer section h5 {
@@ -261,7 +259,7 @@ footer section h5 {
     letter-spacing: 0.12em;
     text-transform: uppercase;
     color: var(--white-alpha-medium);
-    margin-bottom: 14px;
+    margin: 0 0 14px 4px;
 }
 
 footer section ul {
@@ -304,7 +302,7 @@ footer>p {
     max-width: 600px;
 }
 
-footer>a {
+footer section .logo-link a {
     display: inline-block;
     margin-right: 18px;
     font-size: 0.9rem;
@@ -313,8 +311,21 @@ footer>a {
     transition: 0.2s ease;
 }
 
-footer>a:hover {
+footer section .logo-link a:hover {
     color: var(--color-white);
+}
+
+.logo-link .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-links {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
@@ -466,8 +477,12 @@ footer>a:hover {
     }
 
     footer section {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
+        flex-direction: column-reverse;
+    }
+
+    footer .footer-links {
+        margin-bottom: 40px;
+        width: 100%;
     }
 }
 
@@ -494,14 +509,18 @@ footer>a:hover {
     }
 
     footer section {
-        flex-direction: column;
         gap: 40px;
         padding-left: 35px;
         text-align: left;
     }
 
+    .footer-links {
+        flex-direction: column;
+        gap: 40px;
+    }
+
     footer img {
-        width: 140px;
+        width: 170px;
     }
 
     footer>p {
