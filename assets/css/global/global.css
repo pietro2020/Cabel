@@ -50,6 +50,10 @@ body {
     font-family: 'Kanit';
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .content {
     padding: 5px 0;
 }
@@ -139,7 +143,7 @@ nav .nav-list>li>a {
     position: relative;
 }
 
-nav .nav-list > li > a::after {
+nav .nav-list>li>a::after {
     content: '';
     position: absolute;
     bottom: calc(50% - 14px);
@@ -153,11 +157,11 @@ nav .nav-list > li > a::after {
     transition: transform 0.3s ease;
 }
 
-nav .nav-list > li > a:hover::after {
+nav .nav-list>li>a:hover::after {
     transform: scaleX(1);
 }
 
-nav .nav-list > li > a:hover {
+nav .nav-list>li>a:hover {
     color: var(--primary);
 }
 

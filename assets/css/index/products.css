@@ -4,6 +4,8 @@
     margin: 0 auto;
     padding: 40px 20px;
     text-align: center;
+    width: 100%;
+    max-width: 1300px;
 }
 
 .produtos h2 {
@@ -14,83 +16,147 @@
     font-weight: normal;
 }
 
+.produtos-carrossel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.produtos-carrossel {
+    overflow: hidden;
+    width: 100%;
+}
+
 .produtos-catalogo {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 45px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    transition: transform 0.5s ease;
+    will-change: transform;
 }
 
-.produtos img {
-    width: 70%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto 15px auto;
-    transition: transform 0.3s ease;
+.produtos-catalogo > div {
+    flex: 0 0 calc((100% - 48px) / 3);
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px var(--shadow-soft);
+    padding: 0 0 28px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
 }
 
-.produtos img:hover {
-    transform: scale(1.15);
+.produtos-catalogo > div .img-circle {
+    width: 100%;
+    height: 180px;
+    background-color: var(--primary);
+    border-radius: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 60px;
 }
 
-.produtos h3 {
-    margin: 10px 0;
+.produtos-catalogo > div .img-circle::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: white;
+    z-index: 1;
+    box-shadow: 0 4px 16px var(--shadow-light);
+}
+
+.produtos-catalogo > div img {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 2;
+    pointer-events: none;
+    -webkit-user-drag: none;
+}
+
+.produtos-catalogo > div h3 {
+    margin: 15px 0 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-black);
+    padding: 0 20px;
+    z-index: 3;
+    position: relative;
+}
+
+.produtos-catalogo > div a.saiba-mais {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 2px;
+    transition: opacity 0.2s;
+}
+
+.produtos-catalogo > div a.saiba-mais:hover {
+    opacity: 0.83;
+}
+
+/* Setas */
+.carrossel-btn {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: none;
+    background: var(--primary-dark);
+    color: var(--color-white);
     font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, transform 0.2s;
+    z-index: 10;
 }
 
-.produtos p {
-    font-size: 13px;
-    line-height: 1.5;
-    color: var(--text-primary);
+.carrossel-btn:hover {
+    background: var(--primary);
 }
 
-.produtos .catalogo-link {
-    font-size: 23px;
+.catalogo-link a {
+    font-size: 30px;
     line-height: 26px;
     font-weight: 800;
     letter-spacing: 0px;
+    margin-top: 50px;
 }
 
-/* ============================================================
-   RESPONSIVE — Cabel
-   Aplica abaixo de 1024px.
-   ============================================================ */
+.catalogo-link a:hover {
+    color: var(--primary);
+}
 
-/* ---- 1024px: tablet largo ---- */
+/* Responsivo */
 @media (max-width: 1024px) {
-    /* Produtos */
-    .produtos-catalogo {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+    .produtos-catalogo > div {
+        flex: 0 0 calc((100% - 24px) / 2);
     }
 }
 
-/* ---- 768px: tablet ---- */
-@media (max-width: 768px) {
-    /* Produtos */
-    .produtos-catalogo {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
-    }
-
-    .produtos h2 {
-        font-size: 28px;
-    }
-}
-
-/* ---- 480px: mobile pequeno ---- */
-@media (max-width: 480px) {
-    /* Produtos: 1 coluna */
-    .produtos-catalogo {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .produtos h2 {
-        font-size: 22px;
-    }
-
-    .produtos .catalogo-link {
-        font-size: 18px;
+@media (max-width: 600px) {
+    .produtos-catalogo > div {
+        flex: 0 0 100%;
     }
 }

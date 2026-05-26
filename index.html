@@ -139,7 +139,7 @@
         </section>
         <main>
             <h2>A Cabel inova continuamente, mantendo a confiança de seus clientes.</h2>
-            <section class="sobre-nos">
+            <section class="sobre-nos" id="about-us">
                 <video class="video-sobre-nos" autoplay muted loop playsinline>
                     <source src="img/index/sobre-nos/about-video.mp4" type="video/mp4">
                 </video>
@@ -310,62 +310,57 @@
             </section>
             <section class="produtos">
                 <h2>Produtos</h2>
-                <div class="produtos-catalogo">
-                    <div class="flexivel">
-                        <img src="img/index/produtos/cabo-flexivel.png" alt="Cabo flexível">
-                        <h3>Cabo Flexível</h3>
-                        <p>Os Cabos Flexíveis são recomendados para instalações internas e fixas em circuitos de força,
-                            luz,
-                            comandos, sinalizações etc., em construções residenciais, comerciais e industriais. Por se
-                            tratar de um produto com boa flexibilidade, possui maior facilidade de instalação e
-                            manuseio.
-                            Formado por fios de cobre atendendo a norma NBR NM 280, têmpera mole, classe 4, seções
-                            nominal
-                            de 1,0 mm² a 95,0 mm².</p>
+                <div class="produtos-carrossel-wrapper">
+                    <button class="carrossel-btn" id="btn-prev" aria-label="Anterior">&#8592;</button>
+                    <div class="produtos-carrossel">
+                        <div class="produtos-catalogo">
+                            <div class="flexivel">
+                                <div class="img-circle">
+                                    <img src="img/index/produtos/cabo-flexivel.png" alt="Cabo flexível">
+                                </div>
+                                <h3>Cabo Flexível</h3>
+                                <a class="saiba-mais" href="#">Saiba Mais</a>
+                            </div>
+                            <div class="HEPR">
+                                <div class="img-circle">
+                                    <img src="img/index/produtos/cabo-hepr.png" alt="Cabo HEPR">
+                                </div>
+                                <h3>Cabo HEPR</h3>
+                                <a class="saiba-mais" href="#">Saiba Mais</a>
+                            </div>
+                            <div class="PP">
+                                <div class="img-circle">
+                                    <img src="img/index/produtos/cabo-pp.png" alt="Cabo PP">
+                                </div>
+                                <h3>Cabo PP</h3>
+                                <a class="saiba-mais" href="#">Saiba Mais</a>
+                            </div>
+                            <div class="paralelo">
+                                <div class="img-circle">
+                                    <img src="img/index/produtos/cabo-paralelo.png" alt="Cabo Paralelo">
+                                </div>
+                                <h3>Cabo Paralelo</h3>
+                                <a class="saiba-mais" href="#">Saiba Mais</a>
+                            </div>
+                            <div class="fotovoltaica">
+                                <div class="img-circle">
+                                    <img src="img/index/produtos/ponta-solar.png" alt="Cabo Solar Fotovoltaico">
+                                </div>
+                                <h3>Cabo Solar Fotovoltaico</h3>
+                                <a class="saiba-mais" href="#">Saiba Mais</a>
+                            </div>
+                            <div class="telecom">
+                                <div class="img-circle">
+                                    <img src="img/index/produtos/produtos-telecom.png" alt="Telecom">
+                                </div>
+                                <h3>Conheça Nossa Linha Telecom</h3>
+                                <a class="saiba-mais" href="telecom.html">Saiba Mais</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="HEPR">
-                        <img src="img/index/produtos/cabo-hepr.png" alt="Cabo HEPR">
-                        <h3>Cabo HEPR</h3>
-                        <p>Os Cabos HEPR são recomendados para instalações fixas de luz e força em prédios residenciais,
-                            comerciais e industriais, em circuitos de distribuição, circuitos terminais e para linhas
-                            subterrâneas de energia em baixa tensão. Formado por fios de cobre atendendo a norma NBR NM
-                            280,
-                            têmpera mole, classe 4, seções nominal de 10,0 mm² a 240,0 mm².</p>
-                    </div>
-                    <div class="PP">
-                        <img src="img/index/produtos/cabo-pp.png" alt="Cabo pp">
-                        <h3>Cabo PP</h3>
-                        <p>Os Cabos PP são recomendados para ligações de ferramentas portáteis motorizadas,
-                            eletrodomésticos, (cobertura com acabamento brilhante) e ótima flexibilidade. Formado por
-                            fios
-                            de cobre atendendo a norma NBR NM 280, têmpera mole, classe 5, seções nominal de 1,0 mm² a
-                            4,0
-                            mm².</p>
-                    </div>
-                    <div class="paralelo">
-                        <img src="img/index/produtos/cabo-paralelo.png" alt="Cabo paralelo">
-                        <h3>Cabo Paralelo</h3>
-                        <p>Os cordões PARALELO são recomendados em extensões ou ligações de outros aparelhos elétricos
-                            portáteis em tensões até 300 V. Condutor formado por fios de cobre atendendo a norma NBR NM
-                            280,
-                            têmpera mole, classe 5, seções nominais de 1,0 mm² a 4,0 mm².</p>
-                    </div>
-                    <div class="fotovoltaica">
-                        <img src="img/index/produtos/ponta-solar.png" alt="Cabo fotovoltaico">
-                        <h3>Cabo Solar Fotovoltaico</h3>
-                        <p>Indicados para aplicações 1,8Kv C.C. em painéis fotovoltaicos, seguindo a normativa ABNT NBR
-                            16612, os cabos contam com excelente flexibilidade para facilitar o manuseio durante a
-                            instalação.</p>
-                    </div>
-                    <div class="telecom">
-                        <a href="telecom.html">
-                            <img src="img/index/produtos/produtos-telecom.png" alt="Link telecom">
-                            <h3>Conheça Nossa Linha Telecom</h3>
-                            <p>A Cabel conta com variados produtos no segmento Telecom! Clique aqui e conheça.</p>
-                        </a>
-                    </div>
+                    <button class="carrossel-btn" id="btn-next" aria-label="Próximo">&#8594;</button>
                 </div>
-                <h2 class="catalogo-link">Veja mais no catálogo</h2>
+                <h2 class="catalogo-link"><a href="catalogo.html">Veja mais no catálogo</a></h2>
             </section>
             <section class="seguranca">
                 <div>
@@ -467,5 +462,6 @@
 </body>
 <script src="assets/js/script.js"></script>
 <script src="assets/js/slider.js"></script>
+<script src="assets/js/carrossel-produtos.js"></script>
 
 </html>
