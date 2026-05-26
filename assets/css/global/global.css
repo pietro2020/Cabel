@@ -14,8 +14,8 @@
     --text-secondary: rgba(102, 102, 102, 1);
 
     /* ===== Brand / Accent ===== */
-    --primary: rgba(27, 54, 107, 1);
-    --primary-dark: rgba(6, 37, 69, 1);
+    --primary: rgba(33, 56, 100, 1);
+    --primary-dark: rgba(0, 42, 69, 1);
 
     /* ===== Shadows / Borders ===== */
     --shadow-soft: rgba(0, 0, 0, 0.08);
@@ -234,7 +234,7 @@ header img {
 /*-------------- FOOTER --------------*/
 
 footer {
-    background-color: var(--primary);
+    background: linear-gradient(30deg, var(--primary-dark), var(--primary));
     padding: 70px 80px 40px;
     position: absolute;
     width: 100%;
@@ -304,6 +304,7 @@ footer>p {
     line-height: 1.6;
     margin: 20px auto;
     max-width: 600px;
+    text-align: center;
 }
 
 footer section .logo-link a {
