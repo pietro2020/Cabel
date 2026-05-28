@@ -54,14 +54,11 @@ html {
     scroll-behavior: smooth;
 }
 
-.content {
-    padding: 5px 0;
-}
-
 .contatos {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 500;
-    margin: 10px 20px;
+    padding: 10px 15px;
+    background-color: var(--primary);
 }
 
 .contatos span {
@@ -289,7 +286,7 @@ footer section ul li a:hover {
 }
 
 footer img {
-    width: 300px;
+    width: 370px;
     object-fit: contain;
     margin-bottom: 20px;
     margin: 0 auto;
@@ -305,6 +302,12 @@ footer>p {
     margin: 20px auto;
     max-width: 600px;
     text-align: center;
+}
+
+footer section .logo-link {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 footer section .logo-link a {
@@ -362,7 +365,7 @@ footer section .logo-link a:hover {
 
     .contatos {
         font-size: 11px;
-        margin: 8px 12px;
+        padding: 8px 12px;
     }
 
     /* Header — hamburguer */
@@ -372,8 +375,10 @@ footer section .logo-link a:hover {
 
     .img.nav {
         padding: 0 20px;
-        align-items: center;
-        position: relative;
+    }
+
+    header.scrolled .img.nav {
+        padding: 0 20px;
     }
 
     .logo-1 {
@@ -503,6 +508,10 @@ footer section .logo-link a:hover {
         padding: 0 16px;
     }
 
+    header.scrolled .img.nav {
+        padding: 0 16px;
+    }
+
     .logo-1 {
         width: 130px;
         height: 50px;
@@ -525,7 +534,7 @@ footer section .logo-link a:hover {
     }
 
     footer img {
-        width: 170px;
+        width: 230px;
     }
 
     footer>p {

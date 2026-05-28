@@ -51,38 +51,21 @@
 
 .produtos-catalogo > div .img-circle {
     width: 100%;
-    height: 180px;
-    background-color: var(--primary);
+    height: 280px;
     border-radius: 0;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     position: relative;
-    margin-bottom: 60px;
-}
-
-.produtos-catalogo > div .img-circle::after {
-    content: '';
-    position: absolute;
-    bottom: -60px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    background: white;
-    z-index: 1;
-    box-shadow: 0 4px 16px var(--shadow-light);
 }
 
 .produtos-catalogo > div img {
     position: absolute;
-    bottom: -50px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
+    width: 260px;
+    height: 260px;
     object-fit: cover;
     z-index: 2;
     pointer-events: none;
