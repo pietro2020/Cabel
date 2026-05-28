@@ -59,6 +59,7 @@ html {
     font-weight: 500;
     padding: 10px 15px;
     background-color: var(--primary);
+    color: var(--color-white)
 }
 
 .contatos span {
