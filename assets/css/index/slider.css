@@ -3,7 +3,7 @@
 .slider {
     position: relative;
     width: 100%;
-    height: 480px;
+    height: calc(100vh - 154px);
     overflow: hidden;
 }
 
