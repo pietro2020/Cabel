@@ -59,11 +59,17 @@ html {
     font-weight: 500;
     padding: 10px 15px;
     background-color: var(--primary);
-    color: var(--color-white)
+    color: var(--color-white);
+    display: flex;
+    gap: 1px;
 }
 
 .contatos span {
     font-weight: 300;
+}
+
+.contatos .tel {
+    margin-right: 20px;
 }
 
 a {

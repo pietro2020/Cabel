@@ -38,15 +38,17 @@
 
 .produtos-catalogo > div {
     flex: 0 0 calc((100% - 48px) / 3);
-    background: white;
     border-radius: 16px;
-    box-shadow: 0 4px 20px var(--shadow-soft);
     padding: 0 0 28px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     overflow: hidden;
+}
+
+.produtos-catalogo > div a {
+    padding: 20px 90px;
 }
 
 .produtos-catalogo > div .img-circle {
@@ -61,20 +63,23 @@
 
 .produtos-catalogo > div img {
     position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 260px;
-    height: 260px;
+    bottom: 0px;
+    width: 350px;
+    height: 350px;
     object-fit: cover;
     z-index: 2;
     pointer-events: none;
     -webkit-user-drag: none;
+    transition: transform 0.5s ease;
+}
+
+.produtos-catalogo > div a:hover img {
+    transform: scale(1.1);
 }
 
 .produtos-catalogo > div h3 {
     margin: 15px 0 5px 0;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     color: var(--color-black);
     padding: 0 20px;
@@ -82,19 +87,8 @@
     position: relative;
 }
 
-.produtos-catalogo > div a.saiba-mais {
-    margin-top: 12px;
-    font-size: 14px;
-    font-weight: 600;
+.produtos-catalogo > div a:hover h3 {
     color: var(--primary);
-    text-decoration: none;
-    border-bottom: 2px solid var(--primary);
-    padding-bottom: 2px;
-    transition: opacity 0.2s;
-}
-
-.produtos-catalogo > div a.saiba-mais:hover {
-    opacity: 0.83;
 }
 
 /* Setas */
