@@ -61,6 +61,7 @@ html {
     background-color: var(--primary);
     color: var(--color-white);
     display: flex;
+    justify-content: flex-end;
     gap: 1px;
 }
 
@@ -109,6 +110,25 @@ header.scrolled .img.nav {
     margin: 0;
     padding: 0 60px 0 100px;
     transition: padding 0.35s ease;
+}
+
+.img.nav nav {
+    display: flex;
+    gap: 15px;
+}
+
+.img.nav nav > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img.nav nav > div > a {
+    padding: 0;
+}
+
+.img.nav nav > div > a > i {
+    font-size: 25px;
 }
 
 .logo-1 {
@@ -384,6 +404,15 @@ footer section .logo-link a:hover {
         padding: 0 20px;
     }
 
+    .img.nav nav {
+        flex-direction: column;
+    }
+
+    .img.nav nav div {
+        justify-content: center;
+        
+    }
+
     header.scrolled .img.nav {
         padding: 0 20px;
     }
@@ -425,7 +454,7 @@ footer section .logo-link a:hover {
         box-shadow: -4px 0 24px var(--shadow-light);
         z-index: 300;
         transition: right 0.35s ease;
-        padding-top: 80px;
+        padding-top: 30px;
     }
 
     nav.open {
@@ -505,6 +534,10 @@ footer section .logo-link a:hover {
 
 /* ---- 480px: mobile pequeno ---- */
 @media (max-width: 480px) {
+
+    .contatos {
+        font-size: 9px;
+    }
 
     /* Header */
     header {
