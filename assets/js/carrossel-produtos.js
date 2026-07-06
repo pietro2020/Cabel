@@ -12,7 +12,7 @@ let visiveis = 3;
 function getVisivel() {
     if (window.innerWidth <= 600) return 1;
     if (window.innerWidth <= 1024) return 2;
-    return 3;
+    return 4;
 }
 
 function rebuild() {

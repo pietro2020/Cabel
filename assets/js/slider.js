@@ -1,4 +1,4 @@
-function criarSlider(sliderSelector, tempo = 6200){
+function criarSlider(sliderSelector, tempo = 8000){
 
     const slider = document.querySelector(sliderSelector);
 
@@ -15,12 +15,6 @@ function criarSlider(sliderSelector, tempo = 6200){
         slides[index].classList.remove('active');
         dots[index].classList.remove('active');
 
-        const videoAtual = slides[index].querySelector('video');
-
-        if(videoAtual){
-            videoAtual.pause();
-        }
-
         index = novoIndex;
 
         if(index >= slides.length){
@@ -34,12 +28,6 @@ function criarSlider(sliderSelector, tempo = 6200){
         slides[index].classList.add('active');
         dots[index].classList.add('active');
 
-        const novoVideo = slides[index].querySelector('video');
-
-        if(novoVideo){
-            novoVideo.currentTime = 0;
-            novoVideo.play();
-        }
     }
 
     /* ========================= */
@@ -77,4 +65,3 @@ function criarSlider(sliderSelector, tempo = 6200){
 }
 
 criarSlider('.slider');
-criarSlider('.slider-2');

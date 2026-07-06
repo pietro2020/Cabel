@@ -26,7 +26,6 @@ window.addEventListener('scroll', () => {
 });
 
 
-const sobreNos = document.querySelector('.sobre-nos');
 const qualidade = document.querySelector('.quantity');
 
 const observer = new IntersectionObserver((entries) => {
@@ -38,5 +37,4 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.3 });
 
-observer.observe(sobreNos);
 observer.observe(qualidade);

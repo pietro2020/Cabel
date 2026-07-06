@@ -1,6 +1,5 @@
 .um-pouco-mais-sobre {
     display: flex;
-    flex-direction: column;
     align-items: center;
     background-color: var(--bg-light-alt);
     margin-top: 50px;
@@ -19,7 +18,7 @@
 .catalogos > div {
     flex: 1;
     border-radius: 12px;
-    height: 400px;
+    height: 72vh;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -50,7 +49,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 40px 20px 18px 20px;
+    padding: 40px 20px 9px 20px;
     background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%);
     z-index: 2;
 }
@@ -58,32 +57,45 @@
 .catalogos .div-titulo h4 {
     margin: 0;
     color: white;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 700;
-    letter-spacing: 0;
+    letter-spacing: 1px;
 }
 
 /* Responsivo */
 @media (max-width: 768px) {
+    .um-pouco-mais-sobre {
+        padding: 40px 60px;
+    }
+
     .catalogos {
         flex-wrap: wrap;
     }
 
     .catalogos > div {
+        height: 50vh;
         flex: 1 1 calc(50% - 8px);
     }
 
     .catalogos .img {
-        height: 200px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.4s ease;
     }
 }
 
 @media (max-width: 480px) {
+    .um-pouco-mais-sobre {
+        padding: 40px 30px;
+    }
+
     .catalogos > div {
         flex: 1 1 100%;
     }
 
     .catalogos .img {
-        height: 180px;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.4s ease;
     }
 }

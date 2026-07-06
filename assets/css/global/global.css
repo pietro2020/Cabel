@@ -258,7 +258,7 @@ header img {
 /*-------------- FOOTER --------------*/
 
 footer {
-    background: linear-gradient(30deg, var(--primary-dark), var(--primary));
+    background: linear-gradient(30deg, #022048, #0d2768);
     padding: 70px 80px 40px;
     position: absolute;
     width: 100%;
