@@ -9,6 +9,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 
     color: var(--color-white);
     display: flex;
@@ -89,7 +90,6 @@
         padding: 40px 24px;
         text-align: center;
         gap: 20px;
-        background-attachment: fixed;
     }
 
     .seguranca h3 {
