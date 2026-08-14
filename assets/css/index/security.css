@@ -1,13 +1,13 @@
 /*-------------- SECTION SEGURANÇA --------------*/
 
 .seguranca {
-    height: 430px;
+    height: 400px;
     width: 100%;
     position: relative;
 
-    background-image: url("../../../img/index/seguranca/seguranca.jpeg");
+    background-image: url("../../../img/index/seguranca/IMG_5155.PNG");
     background-size: cover;
-    background-position: center;
+    background-position: center 65%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
