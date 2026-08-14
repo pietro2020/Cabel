@@ -3,17 +3,34 @@
 .produtos {
     margin: 0 auto;
     padding: 40px 20px;
-    text-align: center;
     width: 100%;
     max-width: 1300px;
 }
 
+.produtos .titulo-h3 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-left: 58px;
+    
+    background: linear-gradient(90deg, #027dc8, #002764);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 .produtos h2 {
-    margin-bottom: 40px;
-    margin-top: 25px;
-    font-size: 40px;
-    color: var(--text-primary);
-    font-weight: normal;
+    font-size: 2.6rem;
+    margin-bottom: 26px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-left: 58px;
+
+    background: linear-gradient(90deg, #027dc8, #002764);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .produtos-carrossel-wrapper {

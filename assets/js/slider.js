@@ -1,4 +1,4 @@
-function criarSlider(sliderSelector, tempo = 8000){
+function criarSlider(sliderSelector, tempo = 6000){
 
     const slider = document.querySelector(sliderSelector);
 

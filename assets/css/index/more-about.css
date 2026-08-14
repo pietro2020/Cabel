@@ -1,10 +1,21 @@
 .um-pouco-mais-sobre {
     display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: var(--bg-light-alt);
-    margin-top: 50px;
     width: 100%;
-    padding: 40px 90px;
+    padding: 50px 90px;
+}
+
+.titulo-sobre-nos {
+    font-size: 2.6rem;
+    margin-bottom: 16px;
+    font-weight: 700;
+
+    background: linear-gradient(90deg, #027dc8, #002764);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .catalogos {
@@ -15,7 +26,7 @@
     margin-top: 30px;
 }
 
-.catalogos > div {
+.catalogos>div {
     flex: 1;
     border-radius: 12px;
     height: 72vh;
@@ -24,7 +35,7 @@
     cursor: pointer;
 }
 
-.catalogos > div a {
+.catalogos>div a {
     display: block;
     position: relative;
     width: 100%;
@@ -40,7 +51,7 @@
     transition: transform 0.4s ease;
 }
 
-.catalogos > div:hover .img {
+.catalogos>div:hover .img {
     transform: scale(1.05);
 }
 
@@ -50,7 +61,7 @@
     left: 0;
     right: 0;
     padding: 40px 20px 9px 20px;
-    background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
     z-index: 2;
 }
 
@@ -72,7 +83,7 @@
         flex-wrap: wrap;
     }
 
-    .catalogos > div {
+    .catalogos>div {
         height: 50vh;
         flex: 1 1 calc(50% - 8px);
     }
@@ -89,7 +100,7 @@
         padding: 40px 30px;
     }
 
-    .catalogos > div {
+    .catalogos>div {
         flex: 1 1 100%;
     }
 
