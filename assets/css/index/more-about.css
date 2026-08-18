@@ -29,7 +29,7 @@
 .catalogos>div {
     flex: 1;
     border-radius: 12px;
-    height: 72vh;
+    height: 70vh;
     overflow: hidden;
     position: relative;
     cursor: pointer;
