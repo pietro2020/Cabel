@@ -1,4 +1,4 @@
-function criarSlider(sliderSelector, tempo = 6000){
+function criarSlider(sliderSelector, tempo = 6000) {
 
     const slider = document.querySelector(sliderSelector);
 
@@ -10,35 +10,46 @@ function criarSlider(sliderSelector, tempo = 6000){
 
     /* ========================= */
 
-    function mostrarSlide(novoIndex){
+    function mostrarSlide(novoIndex) {
 
         slides[index].classList.remove('active');
         dots[index].classList.remove('active');
 
+        const videoAtual = slides[index].querySelector('video');
+        if (videoAtual) {
+            videoAtual.pause();
+        }
+
         index = novoIndex;
 
-        if(index >= slides.length){
+        if (index >= slides.length) {
             index = 0;
         }
 
-        if(index < 0){
+        if (index < 0) {
             index = slides.length - 1;
         }
 
         slides[index].classList.add('active');
         dots[index].classList.add('active');
 
+        const novoVideo = slides[index].querySelector('video');
+        if (novoVideo) {
+            novoVideo.currentTime = 0;
+            novoVideo.play();
+        }
+
     }
 
     /* ========================= */
 
-    function proximoSlide(){
+    function proximoSlide() {
         mostrarSlide(index + 1);
     }
 
     /* ========================= */
 
-    function iniciarSlider(){
+    function iniciarSlider() {
         intervalo = setInterval(proximoSlide, tempo);
     }
 
