@@ -1,72 +1,217 @@
 main {
-  padding: 24px;
-  font-family: Arial, sans-serif;
-  background: #f5f7fb;
+    background: #f5f7fb;
 }
 
-main h2 {
-  text-align: center;
-  margin-bottom: 30px;
+/* ---- BANNER TOPO ---- */
+
+.banner-1 {
+    width: 100%;
+    height: 334px;
+    background-size: cover;
 }
+
+.banner-1 img {
+  height: 100%;
+  width: 100%;
+}
+
+/* ---- SECTIONS ---- */
 
 main section {
-  margin-bottom: 40px;
+    padding: 40px;
 }
 
 main section h3 {
-  margin-bottom: 16px;
-  font-size: 22px;
-  color: #222;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 4px;
+    border-left: 4px solid var(--primary);
+    padding-left: 12px;
 }
 
-/* GRID dos produtos */
+main section > p {
+    font-size: 0.88rem;
+    color: #888;
+    margin-bottom: 24px;
+    padding-left: 16px;
+}
+
+/* ---- GRID ---- */
+
 main section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
 }
 
-/* CARD */
+/* ---- CARD ---- */
+
 main section ul li {
-  background: #fff;
-  border-radius: 12px;
-  padding: 14px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+    background: white;
+    border-radius: 12px;
+    padding: 16px 12px 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
 }
 
-/* hover bonito */
 main section ul li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* imagem */
 main section ul li img {
-  width: 120px;
-  height: 120px;
-  object-fit: contain;
-  margin-bottom: 12px;
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
-/* link */
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    width: 100%;
+}
+
 main section ul li a {
-  text-decoration: none;
-  color: #1a1a1a;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.4;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0;
 }
 
-main section ul li a:hover {
-  color: #0077ff;
+.card-titulo {
+    color: #1a1a1a;
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+main section ul li:hover .card-titulo {
+    color: var(--primary);
+}
+
+.ver-produto {
+    font-size: 0.82rem;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+/* ---- BANNER SOLAR ---- */
+
+.banner-solar {
+    width: 100%;
+    height: 250px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-solar a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-solar a img {
+  height: 100%;
+  width: 100%;
+}
+
+.banner-solar::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+}
+
+.banner-solar-texto {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.banner-solar-texto p {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    margin-bottom: 6px;
+}
+
+.banner-solar-texto a {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+}
+
+/* ---- RESPONSIVO ---- */
+
+@media (max-width: 768px) {
+    main section {
+        padding: 20px;
+    }
+
+    main section ul {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 14px;
+    }
+
+    .banner-1 {
+        height: 130px;
+    }
+
+    .banner-solar {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    main section {
+        padding: 12px;
+    }
+
+    main section ul {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    main section ul li {
+        padding: 14px 8px 10px;
+    }
+
+    main section ul li img {
+        width: 70px;
+        height: 70px;
+    }
+
+    main section ul li a {
+        font-size: 0.7rem;
+    }
+
+    .banner-1 {
+        height: 100px;
+    }
 }

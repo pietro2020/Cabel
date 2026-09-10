@@ -1,0 +1,567 @@
+[
+  {
+    "id": 1,
+    "tipo": "energia",
+    "titulo": "Cabo Flexível 750V",
+    "texto": "O Cabo Flexível 750V Cabel é indicado para circuitos de força, iluminação, comandos e sinalização. Sua alta flexibilidade facilita a instalação em eletrodutos, proporcionando praticidade e segurança. Uma solução confiável para diversas aplicações elétricas.",
+    "cores": [
+      "preto",
+      "azul",
+      "branco",
+      "verde",
+      "amarelo",
+      "vermelho",
+      "cinza"
+    ],
+    "certificados": [
+      "inmetro",
+      "bureau veritas"
+    ],
+    "condutores": "Fios de cobre",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Policloreto de Vinila (PVC/A)",
+    "cobertura": null,
+    "veias": null,
+    "nucleo": null,
+    "resolucao": null,
+    "classe_de_tensao": "750V",
+    "encordoamento": "Classe 4 ou 5",
+    "temperatura_maxima": "70 °C",
+    "normas_aplicaveis": "NBR NM 247-3, NBR NM 280, NBR 5410"
+  },
+  {
+    "id": 2,
+    "tipo": "energia",
+    "titulo": "Cabo HEPR 0,6/1kV",
+    "texto": "O Cabo HEPR 0,6/1Kv Cabel é ideal para circuitos de distribuição, terminais e linhas subterrâneas de baixa tensão. Oferece excelente desempenho elétrico, resistência e durabilidade. Uma solução segura e confiável para instalações elétricas.",
+    "cores": [
+      "preto",
+      "azul",
+      "verde",
+      "vermelho"
+    ],
+    "certificados": [
+      "tuvnord"
+    ],
+    "condutores": "Fios de cobre",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Etileno-Propileno (HEPR)",
+    "cobertura": "Policloreto de Vinila (PVC/ST2)",
+    "veias": null,
+    "nucleo": null,
+    "resolucao": null,
+    "classe_de_tensao": "0,6/1 kV",
+    "encordoamento": null,
+    "temperatura_maxima": "90 °C",
+    "normas_aplicaveis": "NBR NM 7286, NRB NM 280 da ABNT"
+  },
+  {
+    "id": 3,
+    "tipo": "energia",
+    "titulo": "Cabo Paralelo 300V",
+    "texto": "O Cabo Paralelo 300V Cabel é indicado para a alimentação de equipamentos de baixa potência e pequenas instalações elétricas. Possui construção flexível, proporcionando praticidade durante o manuseio e a instalação. Pode ser utilizado em luminárias, aparelhos eletrônicos, extensões e outras aplicações.",
+    "cores": [
+      "preto",
+      "marrom",
+      "branco"
+    ],
+    "certificados": [
+      "inmetro",
+      "bureau veritas"
+    ],
+    "condutores": "Fios de cobre",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Policloreto de Vinila (PVC/D)",
+    "cobertura": null,
+    "veias": null,
+    "nucleo": null,
+    "resolucao": null,
+    "classe_de_tensao": "300V",
+    "encordoamento": "Classe 5",
+    "temperatura_maxima": "70 °C",
+    "normas_aplicaveis": "NBR NM 247-5, NRB NM 280 da ABNT"
+  },
+  {
+    "id": 4,
+    "tipo": "energia",
+    "titulo": "Cabo PP 500V",
+    "texto": "O Cabo PP 500V Cabel é indicado para a alimentação de ferramentas elétricas portáteis e eletrodomésticos. Apresenta acabamento externo brilhante, aliado a uma estrutura flexível e resistente. Uma solução prática e segura para o uso elétrico no dia a dia.",
+    "cores": [
+      "preto"
+    ],
+    "certificados": [
+      "inmetro",
+      "bureau veritas"
+    ],
+    "condutores": "Fios de cobre",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Composto Termoplástico (PVC-D)",
+    "cobertura": "Composto Termoplástico não-halogenado (PVC-ST5)",
+    "veias": null,
+    "nucleo": null,
+    "resolucao": null,
+    "classe_de_tensao": "500V",
+    "encordoamento": "Classe 5",
+    "temperatura_maxima": "90 °C",
+    "normas_aplicaveis": "NBR NM 280, NBR 5410, NBR 247-5 da ABNT"
+  },
+  {
+    "id": 5,
+    "tipo": "energia",
+    "titulo": "Cabo PP NAX 0,6/1kV",
+    "texto": "O Cabo PP NAX 0,6/1Kv Cabel é indicado para alimentação e distribuição de energia em instalações residenciais, comerciais e subestações. Adequado para redes subterrâneas que exigem maior flexibilidade dos cabos. Versátil e confiável para diferentes projetos de infraestrutura elétrica.",
+    "cores": [
+      "preto"
+    ],
+    "certificados": [
+      "tuvnord"
+    ],
+    "condutores": "Fios de cobre",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Etileno-Propileno (HEPR)",
+    "cobertura": "Composto Termoplástico não-halogenado (PVC-ST2)",
+    "veias": null,
+    "nucleo": null,
+    "resolucao": null,
+    "classe_de_tensao": "0,6/1 kV",
+    "encordoamento": "Classe 4 ou 5",
+    "temperatura_maxima": "90 °C",
+    "normas_aplicaveis": "NM NBR 7286, NRB NM 280 DA ABNT"
+  },
+  {
+    "id": 6,
+    "tipo": "solar",
+    "titulo": "Cabo Fotovoltaico 1,8kV CC",
+    "texto": "O Cabo Fotovoltáico 1,8kv cc Cabel é indicado para a conexão segura e eficiente entre módulos de sistemas fotovoltaicos. Oferece alta resistência à radiação solar, umidade e ambientes com salinidade garantindo desempenho e durabilidade mesmo em condições climáticas extremas.",
+    "cores": [
+      "preto",
+      "verde",
+      "vermelho"
+    ],
+    "certificados": [
+      "tuvnord"
+    ],
+    "condutores": "Fios de cobre estanhado",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Composto de poliolefínico termofixo, não halogenado",
+    "cobertura": "Composto de poliolefínico termofixo, não halogenado",
+    "veias": null,
+    "nucleo": null,
+    "resolucao": null,
+    "classe_de_tensao": "1,8kV CC – 0,6/1kV CA",
+    "encordoamento": "Classe 5",
+    "temperatura_maxima": "90 °C",
+    "normas_aplicaveis": "NBR NM 280, NBR 16612, NBR 16690 da ABNT"
+  },
+  {
+    "id": 7,
+    "tipo": "telecom",
+    "titulo": "Cabo Coaxial RF",
+    "texto": "O Cabo Coaxial RF Cabel é indicado para sistemas de vigilância CFTV Analógico HD nos padrões TVI, CVI e AHD. Proporciona transmissão de sinal com qualidade e estabilidade. Ideal para instalações de segurança em ambientes residenciais e comerciais.",
+    "cores": [
+      "preto",
+      "branco"
+    ],
+    "certificados": [
+      "anatel"
+    ],
+    "condutores": null,
+    "condutoresAlimentacao": "Fio de cobre Flexivel 26AWG",
+    "condutoresCoaxial": "Fio Flexivel 7×0,18mm de liga de Aluminio Cobreado",
+    "isolacao": "Polietileno expandido e dupla blindagem, composta por fita de poliéster aluminizada e trança de fios de liga de cobre entrelaçados",
+    "cobertura": "Composto termoplástico à base de PVC",
+    "veias": null,
+    "nucleo": null,
+    "resolucao": "Ato ANATEL n° 14037, de 05 de outubro de 2022",
+    "classe_de_tensao": null,
+    "encordoamento": null,
+    "temperatura_maxima": null,
+    "normas_aplicaveis": []
+  },
+  {
+    "id": 8,
+    "tipo": "telecom",
+    "titulo": "Cabo Coaxial Série 06",
+    "texto": "O Cabo Coaxial Série 06 Cabel é usado para sistemas de antenas coletivas, parabólicas e recepção UHF/VHF. Compatível com aplicações em CATV, Cable Modem e CFTV HD analógico. Uma solução versátil para transmissão e distribuição de sinais.",
+    "cores": [
+      "branco"
+    ],
+    "certificados": [
+      "anatel"
+    ],
+    "condutores": "Aço Acobreado",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Dielétrico em polietileno expandido e dupla blindagem, composta por fita de poliéster aluminizada e malha de alumínio trançado",
+    "cobertura": "Composto termoplástico à base de PVC",
+    "veias": null,
+    "nucleo": null,
+    "resolucao": "Ato ANATEL n° 14038, de 05 de outubro de 2022",
+    "classe_de_tensao": null,
+    "encordoamento": null,
+    "temperatura_maxima": null,
+    "normas_aplicaveis": []
+  },
+  {
+    "id": 9,
+    "tipo": "telecom",
+    "titulo": "Cabo Coaxial Série 59",
+    "texto": "O Cabo Coaxial Série 59 Cabel é indicado para instalações de antenas UHF, VHF e sinal digital. Ideal para antenas parabólicas (Banda C) e sistemas de CFTV HD analógico. Oferece transmissão de sinal estável e confiável, com proteção contra interferências. Versátil para aplicações residenciais, comerciais e profissionais.",
+    "cores": [
+      "branco"
+    ],
+    "certificados": [
+      "anatel"
+    ],
+    "condutores": "Aço Acobreado",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Dielétrico em polietileno expandido e dupla blindagem, composta por fita de poliéster aluminizada e malha de alumínio trançado",
+    "cobertura": "Composto termoplástico à base de PVC",
+    "veias": null,
+    "nucleo": null,
+    "resolucao": "Ato ANATEL n° 14038, de 05 de outubro de 2022",
+    "classe_de_tensao": null,
+    "encordoamento": null,
+    "temperatura_maxima": null,
+    "normas_aplicaveis": []
+  },
+  {
+    "id": 10,
+    "tipo": "telecom",
+    "titulo": "Cabo de Alarme Multicores - 6 Vias",
+    "texto": "O Cabo de alarme multicores - 6 vias Cabel é ideal para centrais de alarme e sensores de presença. Indicado também para sistemas de automação residencial e instalações de segurança. Oferece praticidade e organização na conexão dos dispositivos.",
+    "cores": [
+      "branco"
+    ],
+    "certificados": [
+      "anatel"
+    ],
+    "condutores": "6 vias de cobre de 0,5 mm",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Poliolefina (PEAD)",
+    "cobertura": "PVC",
+    "veias": [
+      "preto",
+      "vermelho",
+      "azul",
+      "branco",
+      "amarelo",
+      "verde"
+    ],
+    "nucleo": null,
+    "resolucao": null,
+    "classe_de_tensao": null,
+    "encordoamento": null,
+    "temperatura_maxima": null,
+    "normas_aplicaveis": []
+  },
+  {
+    "id": 11,
+    "tipo": "telecom",
+    "titulo": "Cabo de Alarme Multicores - 4 Vias",
+    "texto": "O Cabo de alarme multicores - 4 vias Cabel é ideal para centrais de alarme e sensores de presença. Indicado também para sistemas de automação residencial e instalações de segurança. Oferece praticidade e organização na conexão dos dispositivos.",
+    "cores": [
+      "branco"
+    ],
+    "certificados": [
+      "anatel"
+    ],
+    "condutores": "4 vias de cobre de 0,5 mm",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Poliolefina (PEAD)",
+    "cobertura": "PVC",
+    "veias": [
+      "preto",
+      "vermelho",
+      "amarelo",
+      "verde"
+    ],
+    "nucleo": null,
+    "resolucao": null,
+    "classe_de_tensao": null,
+    "encordoamento": null,
+    "temperatura_maxima": null,
+    "normas_aplicaveis": []
+  },
+  {
+    "id": 12,
+    "tipo": "telecom",
+    "titulo": "Cabo de Rede CAT5e U/UTP 4Px24 AWG",
+    "texto": "O Cabo de rede CAT5e U/UTP 4P x 24 AWG Cabel é desenvolvido para instalações internas horizontais, oferecendo excelente desempenho e confiabilidade na transmissão de dados. É ideal para redes Gigabit Ethernet, 100Base-TX/T4 e ATM 155 Mbps, garantindo qualidade na transmissão de imagens e informações.",
+    "cores": [
+      "preto",
+      "azul",
+      "branco"
+    ],
+    "certificados": [
+      "anatel"
+    ],
+    "condutores": "Cobre eletrolítico sólido 24 AWG",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Poliolefina (PEAD)",
+    "cobertura": "PVC de material retardante à chama, com classificação CMX",
+    "veias": null,
+    "nucleo": null,
+    "resolucao": null,
+    "classe_de_tensao": null,
+    "encordoamento": null,
+    "temperatura_maxima": null,
+    "normas_aplicaveis": "ANSI/TIA– 568.2-D, NBR 14703, NBR 14705, UL 444, ISO/IEC 11801, NBR 14565, NBR 16521, NBR 16264. REQUISITOS ANATEL – CATEGORIA 1."
+  },
+  {
+    "id": 13,
+    "tipo": "telecom",
+    "titulo": "Cabo de Rede CAT5e F/UTP 4Px24 AWG (Blindado)",
+    "texto": "O Cabo de rede CAT5e F/UTP 4Px24 AWG Cabel é ideal para transmissão de voz, dados e vídeo em redes de até 1 Gbps. Possui 4 pares trançados de cobre sólido 24 AWG e blindagem geral em fita, proporcionando maior proteção contra interferências eletromagnéticas. Indicado para cabeamento estruturado, oferece uma conexão estável, eficiente e confiável.",
+    "cores": [
+      "preto"
+    ],
+    "certificados": [
+      "anatel"
+    ],
+    "condutores": "Fio sólido de cobre eletrolítico nú",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Polietileno de alta densidade",
+    "cobertura": "PVC de material retardante à chama, com classificação CMX",
+    "veias": null,
+    "nucleo": "Formado por 4 pares reunidos e enfaixados com fita de poliéster aluminizada e condutor dreno longitudinal",
+    "resolucao": null,
+    "classe_de_tensao": null,
+    "encordoamento": null,
+    "temperatura_maxima": null,
+    "normas_aplicaveis": "ANSI/TIA– 568.2-D, NBR 14703, NBR 14705, UL 444, ISO/IEC 11801, NBR 14565, NBR 16521, NBR 16264. REQUISITOS ANATEL – CATEGORIA 1."
+  },
+  {
+    "id": 14,
+    "tipo": "telecom",
+    "titulo": "Cabo de Rede CAT5e U/UTP 4Px24 AWG Dupla Capa",
+    "texto": "O Cabo de rede CAT5e U/UTP 4Px24 AWG Dupla Capa Cabel é ideal para transmissão de voz, dados e vídeo em alta velocidade. Possui 4 pares trançados de cobre sólido 24 AWG, garantindo excelente desempenho e estabilidade na transmissão. A dupla capa oferece maior proteção mecânica, resistência, durabilidade e segurança durante a instalação. Indicado para cabeamento estruturado, suporta velocidades de até 1 Gbps, sendo uma solução eficiente para redes residenciais, comerciais e corporativas.",
+    "cores": [
+      "preto"
+    ],
+    "certificados": [
+      "anatel"
+    ],
+    "condutores": "Fio sólido de cobre eletrolítico nu",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Polietileno de alta densidade",
+    "cobertura": "PVC retardante à chama, com classificação CMX. Dupla capa com revestimento externo resistente à radiação UV, intempéries e tração mecânica",
+    "veias": null,
+    "nucleo": "Formado por 4 pares reunidos",
+    "resolucao": null,
+    "classe_de_tensao": null,
+    "encordoamento": null,
+    "temperatura_maxima": null,
+    "normas_aplicaveis": "ANSI/TIA– 568.2-D, NBR 14703, NBR 14705, UL 444, ISO/IEC 11801, NBR 14565, NBR 16521, NBR 16264. REQUISITOS ANATEL – CATEGORIA 1."
+  },
+  {
+    "id": 15,
+    "tipo": "telecom",
+    "titulo": "Cabo de Rede CAT5e F/UTP 4Px24 AWG (Dupla Capa/Blindado)",
+    "texto": "O Cabo de rede CAT5e F/UTP 4Px24 AWG Dupla Capa Cabel é indicado para transmissão de voz, dados e vídeo em redes de até 1 Gbps. Possui 4 pares de cobre sólido 24 AWG, blindagem em fita metálica e dupla capa, proporcionando maior proteção contra interferências e danos mecânicos. Ideal para cabeamento estruturado, oferecendo segurança, durabilidade e excelente desempenho na instalação.",
+    "cores": [
+      "preto"
+    ],
+    "certificados": [
+      "anatel"
+    ],
+    "condutores": "Fio sólido de cobre eletrolítico nu",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Polietileno de alta densidade",
+    "cobertura": "PVC retardante à chama, com classificação CMX. Dupla capa com revestimento externo resistente à radiação UV, intempéries e tração mecânica",
+    "veias": null,
+    "nucleo": "Formado por 4 pares reunidos e enfaixados com fita de poliéster aluminizada e condutor dreno longitudinal",
+    "resolucao": null,
+    "classe_de_tensao": null,
+    "encordoamento": null,
+    "temperatura_maxima": null,
+    "normas_aplicaveis": "ANSI/TIA– 568.2-D, ABNT NBR 14703, ABNT NBR 14705, UL 444, ISO/IEC 11801, NBR 14565, NBR 16521, NBR 16264. REQUISITOS ANATEL – CATEGORIA 1."
+  },
+  {
+    "id": 16,
+    "tipo": "telecom",
+    "titulo": "Cabo de Rede CAT6 U/UTP 4Px23 AWG",
+    "texto": "O Cabo de rede CAT 6 U/UTP 4Px23 AWG Cabel é desenvolvido para instalações internas horizontais, o cabo é ideal para aplicações Gigabit Ethernet, 100Base-TX/T4 e ATM 155 Mbps. Indicado para redes de dados e sistemas de câmeras IP e analógicas, proporcionando transmissão estável e eficiente. Oferece excelente desempenho na transmissão de imagens e dados, sendo uma solução confiável para cabeamento estruturado.",
+    "cores": [
+      "preto",
+      "azul",
+      "branco",
+      "vermelho",
+      "cinza"
+    ],
+    "certificados": [
+      "anatel"
+    ],
+    "condutores": "Cobre eletrolítico sólido 23 AWG",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Poliolefina (PEAD)",
+    "cobertura": "PVC CM, PVC LSZH-3",
+    "veias": null,
+    "nucleo": "Formado por 4 pares reunidos + Cruzeta separadora",
+    "resolucao": null,
+    "classe_de_tensao": null,
+    "encordoamento": null,
+    "temperatura_maxima": null,
+    "normas_aplicaveis": "EIA/TIA– 568-D2, NBR 14703, NBR 14705, NBR 14565, UL 444, ISO/IEC 11801. REQUISITOS ANATEL – CATEGORIA 1."
+  },
+  {
+    "id": 17,
+    "tipo": "telecom",
+    "titulo": "Cabo de Rede CAT6 U/UTP 4Px23 AWG Dupla Capa",
+    "texto": "O Cabo de rede CAT 6 U/UTP 4Px23 AWG Dupla Capa Cabel é ideal para instalações que exigem alto desempenho, robustez e confiabilidade, o cabo possui condutor de cobre sólido eletrolítico 23 AWG, garantindo excelente condutividade e integridade do sinal. Enquanto a dupla capa oferece maior proteção contra impactos e condições ambientais. Uma solução resistente e segura para instalações profissionais.",
+    "cores": [
+      "preto"
+    ],
+    "certificados": [
+      "anatel"
+    ],
+    "condutores": "Fio sólido de cobre eletrolítico nu",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Polietileno de alta densidade",
+    "cobertura": "PVC retardante à chama, com classificação CMX. Dupla capa com revestimento externo resistente à radiação UV, intempéries e tração mecânica",
+    "veias": null,
+    "nucleo": "Formado por 4 pares reunidos + Cruzeta separadora",
+    "resolucao": null,
+    "classe_de_tensao": null,
+    "encordoamento": null,
+    "temperatura_maxima": null,
+    "normas_aplicaveis": "ANSI/TIA– 568.2-D, NBR 14703, NBR 14705, UL 444, ISO/IEC 11801, NBR 14565, NBR 16521 e NBR 16264. REQUISITOS ANATEL – CATEGORIA 1."
+  },
+  {
+    "id": 18,
+    "tipo": "telecom",
+    "titulo": "Cabo de Rede CAT6 F/UTP 4Px23 AWG (Blindado)",
+    "texto": "O Cabo de rede CAT6 F/UTP 4Px23 AWG Cabel contém condutor de cobre sólido eletrolítico 23 AWG e isolamento em PEAD, oferece excelente estabilidade e integridade de sinal. A blindagem em folha metálica protege os 4 pares contra interferências EMI/RFI, garantindo transmissão de até 10 Gbps. Sua capa em PVC CM proporciona resistência e segurança, sendo indicada para instalações que exigem alto desempenho e confiabilidade.",
+    "cores": [
+      "preto"
+    ],
+    "certificados": [
+      "anatel"
+    ],
+    "condutores": "Fio sólido de cobre eletrolítico nu",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Polietileno de alta densidade",
+    "cobertura": "PVC de material retardante à chama, com classificação CM",
+    "veias": null,
+    "nucleo": "Formado por 4 pares reunidos e enfaixados com fita de poliéster aluminizada e condutor dreno longitudinal + Cruzeta separadora",
+    "resolucao": null,
+    "classe_de_tensao": null,
+    "encordoamento": null,
+    "temperatura_maxima": null,
+    "normas_aplicaveis": "ANSI/TIA– 568.2-D, ABNT NBR 14703, ABNT NBR 14705, UL 444, ISO/IEC 11801, NBR 14565, NBR 16521 e NBR 16264. REQUISITOS ANATEL – CATEGORIA 1"
+  },
+  {
+    "id": 19,
+    "tipo": "telecom",
+    "titulo": "Cabo de Rede CAT6 F/UTP 4Px23 AWG (Dupla Capa/Blindado)",
+    "texto": "O Cabo de rede CAT6 F/UTP 4Px23 AWG Dupla Capa Cabel é ideal para ambientes com alta interferência eletromagnética, o cabo possui condutor de cobre sólido eletrolítico 23 AWG e isolamento em PEAD, garantindo estabilidade e integridade do sinal. A blindagem em folha metálica protege os 4 pares contra interferências EMI/RFI, permitindo transmissão de até 10 Gbps. Indicada para instalações que exigem alto desempenho e confiabilidade.",
+    "cores": [
+      "preto"
+    ],
+    "certificados": [
+      "anatel"
+    ],
+    "condutores": "Fio sólido de cobre eletrolítico nu",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Polietileno de alta densidade",
+    "cobertura": "PVC retardante à chama, com classificação CMX. Dupla capa com revestimento externo resistente à radiação UV, intempéries e tração mecânica",
+    "veias": null,
+    "nucleo": "Formado por 4 pares reunidos e enfaixados com fita de poliéster aluminizada e condutor dreno longitudinal + Cruzeta separadora",
+    "resolucao": null,
+    "classe_de_tensao": null,
+    "encordoamento": null,
+    "temperatura_maxima": null,
+    "normas_aplicaveis": "ANSI/TIA– 568.2-D, ABNT NBR 14703, ABNT NBR 14705, UL 444, ISO/IEC 11801, NBR 14565, NBR 16521 e NBR 16264. REQUISITOS ANATEL – CATEGORIA 1."
+  },
+  {
+    "id": 20,
+    "tipo": "telecom",
+    "titulo": "Cabo de Segurança Eletrônica 2Px24 AWG CCA",
+    "texto": "O Cabo de Segurança eletrônica 2PX24 AWG CCA Cabel é desenvolvido para sistemas de CFTV, o cabo proporciona transmissão de sinal estável e eficiente para câmeras de segurança. Garante maior qualidade na transmissão das imagens, contribuindo para um monitoramento mais confiável. Também é indicado para sensores de presença e aplicações de automação industrial e residencial.",
+    "cores": [
+      "preto"
+    ],
+    "certificados": [
+      "anatel"
+    ],
+    "condutores": "Liga de Alumínio Acobreado – CCA",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Polietileno de alta densidade",
+    "cobertura": "PVC de material retardante à chama, com classificação CMX",
+    "veias": null,
+    "nucleo": "Formado por 2 pares reunidos",
+    "resolucao": null,
+    "classe_de_tensao": null,
+    "encordoamento": null,
+    "temperatura_maxima": null,
+    "normas_aplicaveis": "Ato n° 8210, de 27 de dezembro de 2019."
+  },
+  {
+    "id": 21,
+    "tipo": "telecom",
+    "titulo": "Cabo de Segurança Eletrônica 4P x 24 AWG CCA",
+    "texto": "O Cabo de Segurança eletrônica 4PX24 AWG CCA Cabel é desenvolvido para sistemas de CFTV, o cabo proporciona transmissão de sinal estável e eficiente para câmeras de segurança. Garante maior qualidade na transmissão das imagens, contribuindo para um monitoramento mais confiável. Também é indicado para sensores de presença e aplicações de automação industrial e residencial.",
+    "cores": [
+      "preto",
+      "azul",
+      "branco"
+    ],
+    "certificados": [
+      "anatel"
+    ],
+    "condutores": "Liga de Alumínio Acobreado – CCA",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Polietileno de alta densidade",
+    "cobertura": "PVC de material retardante à chama, com classificação CMX",
+    "veias": null,
+    "nucleo": "Formado por 4 pares reunidos",
+    "resolucao": null,
+    "classe_de_tensao": null,
+    "encordoamento": null,
+    "temperatura_maxima": null,
+    "normas_aplicaveis": "Ato n° 8210, de 27 de dezembro de 2019."
+  },
+  {
+    "id": 22,
+    "tipo": "telecom",
+    "titulo": "Cabo de Segurança Eletrônica 4P x 24 AWG CCA Dupla Capa",
+    "texto": "O Cabo de Segurança eletrônica 4PX24 AWG CCA Dupla Capa Cabel é feito por condutores em Alumínio Cobreado (CCA), com isolamento em material termoplástico e núcleo protegido por capa em PVC retardante à chama. Sua construção em dupla capa, com classificação CMX, proporciona maior resistência e proteção. Desenvolvido especialmente para sistemas de CFTV externos, garantindo segurança e confiabilidade na transmissão de sinais.",
+    "cores": [
+      "preto"
+    ],
+    "certificados": [
+      "anatel"
+    ],
+    "condutores": "Liga de Alumínio Acobreado – CCA",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Polietileno de alta densidade",
+    "cobertura": "PVC retardante à chama, com classificação CMX. Dupla capa com revestimento externo resistente à radiação UV, intempéries e tração mecânica",
+    "veias": null,
+    "nucleo": "Formado por 4 pares reunidos",
+    "resolucao": null,
+    "classe_de_tensao": null,
+    "encordoamento": null,
+    "temperatura_maxima": null,
+    "normas_aplicaveis": "Ato n° 8210, de 27 de dezembro de 2019."
+  }
+]

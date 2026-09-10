@@ -16,7 +16,9 @@
 
 <body>
     <div class="content">
-        <p class="contatos">Contatos: <span class="tel">Telefone 1: (14) 3161-0341</span> Cotação: <span>vendas@cabel.com.br</span></p>
+        <p class="contatos">Telefone: <span class="tel">(14) 3161-0341</span> Cotação:
+            <span>vendas@cabel.com.br</span>
+        </p>
         <header id="header">
             <div class="img nav" id="div-header">
                 <a href="index.html"><img class="logo-1" src="img/logo/logo-blue.png" alt="logo da cabel cor azul"></a>
@@ -36,7 +38,6 @@
                                 <ul class="sub-menu-list">
                                     <li><a href="">Nossa História</a></li>
                                     <li><a href="">Nossas Unidades</a></li>
-                                    <li><a href="">Nossa Tecnologia</a></li>
                                     <li><a href="">Qualidade</a></li>
                                 </ul>
                             </div>
@@ -68,19 +69,12 @@
             </div>
         </header>
         <main>
-            <div>
-                <h2>Entre em contato conosco!</h2>
-            </div>
             <div class="contato">
-                <div class="telefone">
-                    <h2>Responderemos você
-                        o mais breve
-                        possível!</h2>
-                    <p>Dúvidas, criticas ou elogios, estamos aqui
-                        para te ouvir!</p>
+                <div>
+                    <h2>Fale conosco</h2>
+                    <hr>
                     <h4>Telefones</h4>
-                    <p class="canais tel">(14) 3161-0341</p>
-                    <p class="atencao">De segunda a sexta, das 7h às 17hs</p>
+                    <p class="tel canais"><i data-lucide="phone"></i>(14) 3161-0341</p>
                     <h4>E-mail</h4>
                     <ul>
                         <li>
@@ -93,6 +87,7 @@
                         </li>
                         <li>
                             <p class="canais">Financeiro</p>
+                            <p class="atencao">financeiro@cabel.com.br</p>
                             <p class="atencao">analisecredito@cabel.com.br</p>
                         </li>
                         <li>
@@ -103,20 +98,20 @@
                             <p class="canais">SAC</p>
                             <p class="atencao">sac@cabel.com.br</p>
                         </li>
+                        <li>
+                            <p class="canais">Fiscal</p>
+                            <p class="atencao">fiscal@cabel.com.br</p>
+                        </li>
+                        <li>
+                            <p class="canais">Logística</p>
+                            <p class="atencao">logistica@cabel.com.br</p>
+                        </li>
                     </ul>
-                    <h4>Trabalhe conosco</h4>
-                    <p class="canais vagas">Confira nossas vagas disponiveis</p>
-                    <a href="https://www.linkedin.com/in/cabel-condutores-el%C3%A9tricos-992b70210/" class="btn">CLIQUE AQUI</a>
                 </div>
-                <div class="div-form">
-                    <form>
-                        <input type="text" id="nome" class="nome" placeholder="Seu Nome" required>
-                        <input type="text" id="email" class="email" placeholder="Seu Email" required>
-                        <input type="text" id="assunto" class="assunto" placeholder="Assunto" required>
-                        <textarea id="mensagem" class="mensagem" placeholder="Sua mensagem" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
+            </div>
+            <div class="img">
+                <img src="img\contato\Imagem CONTATO - corte.png"
+                    alt="Mulher com blazer azul com o logo da cabel usando um computador">
             </div>
         </main>
         <footer>
@@ -173,5 +168,10 @@
     </div>
 </body>
 <script src="assets/js/script.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script>
+    lucide.createIcons();
+</script>
 
 </html>
