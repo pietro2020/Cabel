@@ -6,7 +6,7 @@ main {
 
 .banner-1 {
     width: 100%;
-    height: 334px;
+    height: 370px;
     background-size: cover;
 }
 
@@ -44,8 +44,13 @@ main section ul {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    gap: 40px;
+    justify-content: center;
+}
+
+main section ul#energia-list {
+    grid-template-columns: repeat(5, minmax(200px, 1fr));
 }
 
 /* ---- CARD ---- */
@@ -53,7 +58,6 @@ main section ul {
 main section ul li {
     background: white;
     border-radius: 12px;
-    padding: 16px 12px 12px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     display: flex;
@@ -71,6 +75,7 @@ main section ul li:hover {
 main section ul li img {
     width: 220px;
     height: 220px;
+    max-width: 100%;
     object-fit: contain;
     margin-bottom: 10px;
 }
@@ -79,9 +84,9 @@ main section ul li img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
+    gap: 2px;
     border-top: 1px solid #eee;
-    padding-top: 10px;
+    padding: 15px 0;
     width: 100%;
 }
 
@@ -97,18 +102,28 @@ main section ul li a {
 
 .card-titulo {
     color: #1a1a1a;
-    font-size: 0.85rem;
+    font-size: 1.1rem;
     font-weight: 700;
     line-height: 1.4;
     text-transform: uppercase;
 }
 
+.card-subtitulo {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
 main section ul li:hover .card-titulo {
+    color: var(--color-black);
+}
+
+main section ul li:hover .card-subtitulo {
     color: var(--primary);
 }
 
 .ver-produto {
-    font-size: 0.82rem;
+    font-size: 1rem;
     color: var(--primary);
     font-weight: 500;
 }
@@ -117,7 +132,7 @@ main section ul li:hover .card-titulo {
 
 .banner-solar {
     width: 100%;
-    height: 250px;
+    height: 270px;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -179,6 +194,10 @@ main section ul li:hover .card-titulo {
         gap: 14px;
     }
 
+    main section ul#energia-list {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+
     .banner-1 {
         height: 130px;
     }
@@ -198,13 +217,17 @@ main section ul li:hover .card-titulo {
         gap: 10px;
     }
 
+    main section ul#energia-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     main section ul li {
         padding: 14px 8px 10px;
     }
 
     main section ul li img {
-        width: 70px;
-        height: 70px;
+        width: 105px;
+        height: 105px;
     }
 
     main section ul li a {

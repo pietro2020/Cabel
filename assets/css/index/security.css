@@ -1,13 +1,14 @@
 /*-------------- SECTION SEGURANÇA --------------*/
 
 .seguranca {
+    box-sizing: border-box;
     height: 400px;
     width: 100%;
     position: relative;
 
     background-image: url("../../../img/index/seguranca/IMG_5155.PNG");
     background-size: cover;
-    background-position: center 65%;
+    background-position: center 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -61,6 +62,44 @@
 
 .seguranca a:hover {
     opacity: 0.8;
+}
+
+.seguranca {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    gap: 40px;
+    color: var(--color-white);
+}
+
+.seguranca-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 65%;
+    will-change: transform;
+    pointer-events: none;
+}
+
+.seguranca-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: var(--primary-dark);
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.seguranca-conteudo {
+    position: relative;
+    z-index: 2;
 }
 
 /* ============================================================

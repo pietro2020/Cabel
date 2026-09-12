@@ -1,0 +1,343 @@
+/* ---- NOSSA HISTÓRIA ---- */
+
+.nossa-historia {
+    width: 100%;
+    height: calc(100vh - 154px);
+    align-content: center;
+
+    background-image: url("../../../img/empresa/bg-nossa-historia.jpeg");
+    background-size:cover;
+    background-position: center;
+    position: relative;
+}
+
+.nossa-historia::before {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(10, 22, 40, 0.6) 45%, rgba(10, 22, 40, 0.1));
+}
+
+.historia-conteudo {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    padding: 70px 25px 150px 80px;
+    color: white;
+    max-width: 550px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.historia-conteudo h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 1;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.historia-conteudo h1 span {
+    background: linear-gradient(90deg, #027dc8, #013d9d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.historia-conteudo p {
+    font-size: 1.15rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.historia-tag {
+    font-size: 0.9rem !important;
+    letter-spacing: 4px;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+}
+
+.historia-img {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.historia-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* ---- NOSSAS UNIDADES ---- */
+
+.nossas-unidades {
+    padding: 20px 80px 60px 80px;
+    background: white;
+}
+
+.unidades-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.unidades-titulo h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.1;
+    color: #1a1a1a;
+    align-self: center;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #006aac;
+}
+
+.unidades-titulo h2 span {
+    background: linear-gradient(90deg, #027dc8, #002764);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.unidades-titulo div {
+    display: flex;
+    align-items: center;
+}
+
+.unidades-titulo div > img {
+    height: 270px;
+}
+
+.unidades-titulo div > p {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: #888;
+    line-height: 1.8;
+    padding-top: 8px;
+    font-weight: 600;
+}
+
+.unidades-titulo div > p span {
+    color: var(--primary);
+}
+
+.unidades-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.unidade {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.unidade img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    border-radius: 10px;
+}
+
+.unidade:hover img {
+    transform: scale(1.05);
+}
+
+.unidade {
+    position: relative;
+    overflow: visible;
+}
+
+.unidade span {
+    position: absolute;
+    bottom: -32px;
+    left: 10%;
+    right: 10%;
+
+    padding: 14px 18px;
+    background: #2167df;
+    color: #fff;
+
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+
+    border-radius: 14px;
+
+    z-index: 2;
+}
+
+
+/* ---- QUALIDADE ---- */
+
+.qualidade {
+    width: 100%;
+    height: calc(100vh - 100px);
+    align-content: center;
+
+    background-image: url("../../../img/empresa/bg-qualidade.png");
+    background-size:cover;
+    background-position: center;
+    position: relative;
+}
+
+.qualidade-texto {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    padding: 70px 0 150px 80px;
+    color: white;
+    max-width: 630px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.qualidade-tag {
+    font-size: 0.9rem !important;
+    letter-spacing: 4px;
+    color: white !important;
+    text-transform: uppercase;
+}
+
+.qualidade-texto h2 {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.qualidade-texto h2 span {
+    background: linear-gradient(90deg, #027dc8, #004bc5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.qualidade-texto p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.logos-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+}
+
+.logos-list li a img {
+    height: 55px;
+    width: 55px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.logos-list li a:hover img {
+    transform: scale(1.1);
+}
+
+.qualidade-img {
+    flex: 1;
+    position: relative;
+}
+
+.qualidade-img img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.qualidade-img-tag {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: var(--primary);
+    text-transform: uppercase;
+    line-height: 1.8;
+    text-align: right;
+    margin-bottom: 12px;
+}
+
+/* ---- RESPONSIVO ---- */
+
+@media (max-width: 1024px) {
+    .historia-conteudo {
+        padding: 50px 40px;
+    }
+
+    .nossas-unidades,
+    .qualidade {
+        padding: 50px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nossa-historia {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .historia-overlay {
+        background: linear-gradient(to bottom, rgba(10, 22, 40, 0.95) 50%, rgba(10, 22, 40, 0.5));
+    }
+
+    .historia-conteudo {
+        padding: 40px 24px;
+    }
+
+    .historia-conteudo h1 {
+        font-size: 2.5rem;
+    }
+
+    .historia-img {
+        position: relative;
+        width: 100%;
+        height: 240px;
+    }
+
+    .nossas-unidades,
+    .qualidade {
+        padding: 40px 24px;
+    }
+
+    .unidades-titulo {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .unidades-titulo > p {
+        text-align: left;
+    }
+
+    .unidades-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .qualidade {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .historia-conteudo h1 {
+        font-size: 2rem;
+    }
+
+    .unidades-titulo h2,
+    .qualidade-texto h2 {
+        font-size: 2rem;
+    }
+}

@@ -13,6 +13,7 @@ async function carregarProdutos() {
                 <img src="img/catalogo/produtos/${produto.id}.png" alt="${produto.titulo}">
                 <div class="card-info">
                     <span class="card-titulo">${produto.titulo}</span>
+                    <span class="card-subtitulo">${produto.subtitulo ?? ''}</span>
                     <span class="ver-produto">Ver produto →</span>
                 </div>
             </a>
