@@ -7,12 +7,14 @@
     <title>Cabel</title>
 
     <link rel="stylesheet" href="assets/css/global/global.css">
+    <link rel="stylesheet" href="assets/css/product/produto.css">
 
     <link rel="shortcut icon" href="img/icon/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <meta ption"
         content="Cabel: cabos elétricos confiáveis, duráveis e de alto desempenho para garantir segurança e eficiência em qualquer tipo de instalação.">
 </head>
+
 <body>
     <div class="content">
         <p class="contatos">Telefone: <span class="tel">(14) 3161-0341</span> Cotação:
@@ -68,6 +70,30 @@
             </div>
         </header>
 
+        <main>
+            <section class="produto-hero">
+                <div class="produto-info">
+                    <p id="produto-tipo" class="produto-tipo"></p>
+                    <h1 id="produto-titulo"></h1>
+                    <p id="produto-texto" class="produto-texto"></p>
+                    <div class="bloco">
+                        <h3>Especificações Técnicas</h3>
+                        <table id="specs-table"></table>
+                    </div>
+                </div>
+                <div class="blocos-row">
+                    <div class="bloco" id="cores-section">
+                        <h3>Cores Disponíveis</h3>
+                        <div id="cores-lista" class="cores-lista"></div>
+                    </div>
+                    <div class="bloco" id="certs-section">
+                        <h3>Certificações e Conformidade</h3>
+                        <div id="certs-lista" class="certs-lista"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
         <footer>
             <section>
                 <div class="logo-link">
@@ -122,4 +148,6 @@
     </div>
 </body>
 <script src="assets/js/script.js"></script>
+<script src="assets/js/produto.js"></script>
+
 </html>
