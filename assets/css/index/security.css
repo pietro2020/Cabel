@@ -1,106 +1,76 @@
 /*-------------- SECTION SEGURANÇA --------------*/
 
 .seguranca {
-    box-sizing: border-box;
-    height: 400px;
-    width: 100%;
     position: relative;
-
-    background-image: url("../../../img/index/seguranca/IMG_5155.PNG");
-    background-size: cover;
-    background-position: center 50%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    color: var(--color-white);
+    width: 100%;
+    min-height: 400px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 60px 80px;
-    gap: 40px;
-}
-
-.seguranca::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: var(--primary-dark);
-    opacity: 0.6;
-    z-index: 0;
-}
-
-.seguranca * {
-    position: relative;
-    z-index: 1;
-}
-
-.seguranca p {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 15px;
-    margin-bottom: 20px;
-}
-
-.seguranca h3 {
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 1.3;
-    max-width: 500px;
-    margin-bottom: 30px;
-}
-
-.seguranca a {
-    display: inline-block;
-    background: white;
-    color: var(--primary-dark);
-    padding: 15px 30px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.seguranca a:hover {
-    opacity: 0.8;
-}
-
-.seguranca {
-    height: 400px;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 60px 80px;
-    gap: 40px;
-    color: var(--color-white);
+    padding: 60px 8%;
+    color: #ffffff;
+    clip-path: inset(0);
 }
 
 .seguranca-img {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
-    object-position: center 65%;
-    will-change: transform;
+    object-position: center 67%;
+    z-index: 1;
     pointer-events: none;
 }
 
 .seguranca-overlay {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-color: var(--primary-dark);
-    opacity: 0.6;
-    z-index: 1;
+    opacity: 0.65;
+    z-index: 2;
 }
 
 .seguranca-conteudo {
     position: relative;
-    z-index: 2;
+    z-index: 3;
+    max-width: 600px;
 }
+
+.seguranca-conteudo p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.seguranca-conteudo h3 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 24px;
+    color: #ffffff;
+}
+
+.seguranca-conteudo a {
+    display: inline-block;
+    background-color: #ffffff;
+    color: var(--primary-dark);
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: opacity 0.3s ease;
+}
+
+.seguranca-conteudo a:hover {
+    opacity: 0.8;
+}
+
 
 /* ============================================================
    RESPONSIVE — Cabel
