@@ -10,7 +10,7 @@ const coresMapa = {
 };
 
 const certsMapa = {
-    'inmetro':       'img/certificados/logo/anatel.png',
+    'inmetro':       'img/certificados/logo/inmetro.png',
     'bureau veritas':'img/certificados/logo/bureau.png',
     'anatel':        'img/certificados/logo/anatel.png',
     'tuvnord':       'img/certificados/logo/tuvnord.png',
@@ -95,7 +95,7 @@ async function carregarProduto() {
         if (!src) return;
 
         const a = document.createElement('a');
-        a.href = src;
+        a.href = `img/certificados/doc/${cert}/${id}.pdf`;
         a.target = '_blank';
 
         const img = document.createElement('img');
