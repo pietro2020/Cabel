@@ -261,6 +261,7 @@
     .unidade img {
         height: 220px;
     }
+
 }
 
 /* Tablets */
@@ -288,6 +289,11 @@
     .unidades-titulo div > p {
         text-align: right;
     }
+
+    .logos-list li a img {
+        height: 64px;
+        width: 64px;
+    }
 }
 
 /* Smartphones */
@@ -301,5 +307,10 @@
     .unidades-titulo div {
         flex-direction: column;
         align-items: flex-end;
+    }
+
+    .logos-list li a img {
+        height: 52px;
+        width: 52px;
     }
 }
