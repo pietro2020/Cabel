@@ -121,6 +121,7 @@
 
 /* ---- 768px: tablet ---- */
 @media (max-width: 768px) {
+
     /* Cabel é qualidade — empilha (imagem vai para baixo) */
     .cabel-e-qualidade {
         flex-direction: column;
@@ -146,13 +147,18 @@
 
 /* ---- 480px: mobile pequeno ---- */
 @media (max-width: 480px) {
-    /* Qualidade */
+
+    .quantity {
+        padding: 10px 15px;
+    }
+
     .quantity h3 {
         font-size: 1.3rem;
     }
 
     .quantity p {
         font-size: 0.9rem;
+        padding: 0 25px 0 30px;
     }
 
     .img-qualidade {
