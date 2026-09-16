@@ -169,4 +169,8 @@
         height: 52px;
         width: 52px;
     }
+
+    .logos-list {
+        gap: 10px;
+    }
 }
