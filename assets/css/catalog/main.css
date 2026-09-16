@@ -25,16 +25,9 @@ main section h3 {
     font-size: 2.5rem;
     font-weight: 700;
     color: black;
-    margin-bottom: 4px;
+    margin-bottom: 20px;
     border-left: 4px solid var(--primary);
     padding-left: 12px;
-}
-
-main section > p {
-    font-size: 0.88rem;
-    color: #888;
-    margin-bottom: 24px;
-    padding-left: 16px;
 }
 
 /* ---- GRID ---- */
