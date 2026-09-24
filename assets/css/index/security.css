@@ -40,14 +40,6 @@
     max-width: 600px;
 }
 
-.seguranca-conteudo p {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 14px;
-    margin-bottom: 12px;
-    color: #ffffff;
-}
-
 .seguranca-conteudo h3 {
     font-size: 28px;
     font-weight: bold;
@@ -112,8 +104,8 @@
 
     /* Segurança */
     .seguranca {
-        height: auto;
-        padding: 36px 16px;
+        min-height: 300px;
+        padding: 70px 16px;
     }
 
     .seguranca h3 {
