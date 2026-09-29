@@ -103,12 +103,12 @@
 
 .unidades-titulo div > img {
     height: auto;
-    max-height: 200px;
+    max-height: 260px;
     object-fit: contain;
 }
 
 .unidades-titulo div > p {
-    font-size: 0.8rem;
+    font-size: 0.88rem;
     letter-spacing: 1px;
     color: #888;
     line-height: 1.6;
