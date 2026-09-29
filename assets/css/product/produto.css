@@ -51,6 +51,7 @@
 
 .produto-info > .bloco {
     width: 100%;
+    justify-items: center;
 }
 
 /* ---- BLOCOS ROW (largura total, abaixo do hero) ---- */
@@ -65,7 +66,6 @@
 
 .blocos-row .bloco {
     flex: 1;
-    justify-items: center;
 }
 
 /* ---- BLOCO GENÉRICO ---- */
