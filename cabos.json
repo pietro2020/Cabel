@@ -334,7 +334,7 @@
     "id": 13,
     "tipo": "telecom",
     "titulo": "CABO DE REDE CAT5e",
-    "subtitulo": "F/UTP",
+    "subtitulo": "F/UTP CMX",
     "texto": "O Cabo de rede CAT5e F/UTP 4Px24 AWG Cabel é ideal para transmissão de voz, dados e vídeo em redes de até 1 Gbps. Possui 4 pares trançados de cobre sólido 24 AWG e blindagem geral em fita, proporcionando maior proteção contra interferências eletromagnéticas. Indicado para cabeamento estruturado, oferece uma conexão estável, eficiente e confiável.",
     "cores": [
       "preto"
@@ -384,7 +384,7 @@
     "id": 15,
     "tipo": "telecom",
     "titulo": "CABO DE REDE CAT5e",
-    "subtitulo": "F/UTP Dupla Capa",
+    "subtitulo": "F/UTP CMX Dupla Capa",
     "texto": "O Cabo de rede CAT5e F/UTP 4Px24 AWG Dupla Capa Cabel é indicado para transmissão de voz, dados e vídeo em redes de até 1 Gbps. Possui 4 pares de cobre sólido 24 AWG, blindagem em fita metálica e dupla capa, proporcionando maior proteção contra interferências e danos mecânicos. Ideal para cabeamento estruturado, oferecendo segurança, durabilidade e excelente desempenho na instalação.",
     "cores": [
       "preto"
@@ -409,7 +409,7 @@
     "id": 16,
     "tipo": "telecom",
     "titulo": "CABO DE REDE CAT6",
-    "subtitulo": "U/UTP CM/CMX",
+    "subtitulo": "U/UTP CM",
     "texto": "O Cabo de rede CAT 6 U/UTP 4Px23 AWG Cabel é desenvolvido para instalações internas horizontais, o cabo é ideal para aplicações Gigabit Ethernet, 100Base-TX/T4 e ATM 155 Mbps. Indicado para redes de dados e sistemas de câmeras IP e analógicas, proporcionando transmissão estável e eficiente. Oferece excelente desempenho na transmissão de imagens e dados, sendo uma solução confiável para cabeamento estruturado.",
     "cores": [
       "preto",
@@ -438,7 +438,7 @@
     "id": 17,
     "tipo": "telecom",
     "titulo": "CABO DE REDE CAT6",
-    "subtitulo": "U/UTP Dupla Capa",
+    "subtitulo": "U/UTP CM Dupla Capa",
     "texto": "O Cabo de rede CAT 6 U/UTP 4Px23 AWG Dupla Capa Cabel é ideal para instalações que exigem alto desempenho, robustez e confiabilidade, o cabo possui condutor de cobre sólido eletrolítico 23 AWG, garantindo excelente condutividade e integridade do sinal. Enquanto a dupla capa oferece maior proteção contra impactos e condições ambientais. Uma solução resistente e segura para instalações profissionais.",
     "cores": [
       "preto"
@@ -463,7 +463,7 @@
     "id": 18,
     "tipo": "telecom",
     "titulo": "CABO DE REDE CAT6",
-    "subtitulo": "F/UTP",
+    "subtitulo": "F/UTP CM",
     "texto": "O Cabo de rede CAT6 F/UTP 4Px23 AWG Cabel contém condutor de cobre sólido eletrolítico 23 AWG e isolamento em PEAD, oferece excelente estabilidade e integridade de sinal. A blindagem em folha metálica protege os 4 pares contra interferências EMI/RFI, garantindo transmissão de até 10 Gbps. Sua capa em PVC CM proporciona resistência e segurança, sendo indicada para instalações que exigem alto desempenho e confiabilidade.",
     "cores": [
       "preto"
@@ -488,7 +488,7 @@
     "id": 19,
     "tipo": "telecom",
     "titulo": "CABO DE REDE CAT6",
-    "subtitulo": " F/UTP Dupla Capa",
+    "subtitulo": " F/UTP CM Dupla Capa",
     "texto": "O Cabo de rede CAT6 F/UTP 4Px23 AWG Dupla Capa Cabel é ideal para ambientes com alta interferência eletromagnética, o cabo possui condutor de cobre sólido eletrolítico 23 AWG e isolamento em PEAD, garantindo estabilidade e integridade do sinal. A blindagem em folha metálica protege os 4 pares contra interferências EMI/RFI, permitindo transmissão de até 10 Gbps. Indicada para instalações que exigem alto desempenho e confiabilidade.",
     "cores": [
       "preto"
