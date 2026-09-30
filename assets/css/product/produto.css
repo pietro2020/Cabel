@@ -159,14 +159,19 @@
     align-items: center;
 }
 
-.certs-lista img {
+.certs-lista .certificado {
     height: 80px;
     width: 80px;
     object-fit: contain;
     transition: transform 0.2s ease;
 }
 
-.certs-lista img:hover {
+.certs-lista .certificado img {
+    height: 100%;
+    width: 100%;
+}
+
+.certs-lista .certificado:hover {
     transform: scale(1.1);
 }
 

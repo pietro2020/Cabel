@@ -1,34 +1,34 @@
 const coresMapa = {
-    preto:    '#1a1a1a',
-    azul:     '#1a56db',
-    branco:   '#ffffff',
-    verde:    '#16a34a',
-    amarelo:  '#eab308',
+    preto: '#1a1a1a',
+    azul: '#1a56db',
+    branco: '#ffffff',
+    verde: '#16a34a',
+    amarelo: '#eab308',
     vermelho: '#dc2626',
-    cinza:    '#9ca3af',
-    marrom:   '#92400e',
+    cinza: '#9ca3af',
+    marrom: '#92400e',
 };
 
 const certsMapa = {
-    'inmetro':       'img/certificados/logo/inmetro.png',
-    'bureau veritas':'img/certificados/logo/bureau.png',
-    'anatel':        'img/certificados/logo/anatel.png',
-    'tuvnord':       'img/certificados/logo/tuvnord.png',
+    'inmetro': 'img/certificados/logo/inmetro.png',
+    'bureau veritas': 'img/certificados/logo/bureau.png',
+    'anatel': 'img/certificados/logo/anatel.png',
+    'tuvnord': 'img/certificados/logo/tuvnord.png',
 };
 
 const especsMapa = [
-    { chave: 'condutores',           label: 'Condutor' },
-    { chave: 'condutoresAlimentacao',label: 'Condutor Alimentação' },
-    { chave: 'condutoresCoaxial',    label: 'Condutor Coaxial' },
-    { chave: 'isolacao',             label: 'Isolação' },
-    { chave: 'cobertura',            label: 'Cobertura' },
-    { chave: 'veias',                label: 'Veias' },
-    { chave: 'nucleo',               label: 'Núcleo' },
-    { chave: 'resolucao',            label: 'Resolução' },
-    { chave: 'classe_de_tensao',     label: 'Classe de Tensão' },
-    { chave: 'encordoamento',        label: 'Encordoamento' },
-    { chave: 'temperatura_maxima',   label: 'Temperatura Máxima em Serviço Contínuo' },
-    { chave: 'normas_aplicaveis',    label: 'Normas Aplicáveis' },
+    { chave: 'condutores', label: 'Condutor' },
+    { chave: 'condutoresAlimentacao', label: 'Condutor Alimentação' },
+    { chave: 'condutoresCoaxial', label: 'Condutor Coaxial' },
+    { chave: 'isolacao', label: 'Isolação' },
+    { chave: 'cobertura', label: 'Cobertura' },
+    { chave: 'veias', label: 'Veias' },
+    { chave: 'nucleo', label: 'Núcleo' },
+    { chave: 'resolucao', label: 'Resolução' },
+    { chave: 'classe_de_tensao', label: 'Classe de Tensão' },
+    { chave: 'encordoamento', label: 'Encordoamento' },
+    { chave: 'temperatura_maxima', label: 'Temperatura Máxima em Serviço Contínuo' },
+    { chave: 'normas_aplicaveis', label: 'Normas Aplicáveis' },
 ];
 
 async function carregarProduto() {
@@ -90,27 +90,45 @@ async function carregarProduto() {
     const certsLista = document.getElementById('certs-lista');
 
     if (produto.certificados && produto.certificados.length > 0) {
-    produto.certificados.forEach(cert => {
-        const src = certsMapa[cert.toLowerCase()];
-        if (!src) return;
-        if (cert == "bureau") {
-            cert = "inmetro";
-        }
+        produto.certificados.forEach(async certOriginal => {
+            const src = certsMapa[certOriginal.toLowerCase()];
+            if (!src) return;
 
-        const a = document.createElement('a');
-        a.href = `img/certificados/doc/${cert}/${id}.pdf`;
-        a.target = '_blank';
+            let cert = certOriginal;
 
-        const img = document.createElement('img');
-        img.src = src;
-        img.alt = cert;
+            if (cert.toLowerCase() === "bureau veritas") {
+                cert = "inmetro";
+            }
 
-        a.appendChild(img);
-        certsLista.appendChild(a);
-    });
-} else {
-    certsSection.style.display = 'none';
-}
+            const pdfUrl = `img/certificados/doc/${cert}/${id}.pdf`;
+
+            let existe = false;
+
+            try {
+                const response = await fetch(pdfUrl, { method: 'HEAD' });
+                existe = response.ok;
+            } catch (error) {
+                existe = false;
+            }
+
+            const elemento = document.createElement(existe ? 'a' : 'div');
+            elemento.className = 'certificado';
+
+            if (existe) {
+                elemento.href = pdfUrl;
+                elemento.target = '_blank';
+            }
+
+            const img = document.createElement('img');
+            img.src = src;
+            img.alt = certOriginal;
+
+            elemento.appendChild(img);
+            certsLista.appendChild(elemento);
+        });
+    } else {
+        certsSection.style.display = 'none';
+    }
 
 }
 
