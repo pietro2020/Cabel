@@ -93,6 +93,9 @@ async function carregarProduto() {
     produto.certificados.forEach(cert => {
         const src = certsMapa[cert.toLowerCase()];
         if (!src) return;
+        if (cert == "bureau") {
+            cert = "inmetro";
+        }
 
         const a = document.createElement('a');
         a.href = `img/certificados/doc/${cert}/${id}.pdf`;
