@@ -164,10 +164,11 @@
     width: 80px;
     object-fit: contain;
     transition: transform 0.2s ease;
+    align-content: center;
 }
 
 .certs-lista .certificado img {
-    height: 100%;
+    height: auto;
     width: 100%;
 }
 
