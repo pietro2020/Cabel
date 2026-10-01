@@ -1,5 +1,5 @@
 async function carregarProdutos() {
-    const response = await fetch('cabos.json');
+    const response = await fetch('../cabos.json');
     const produtos = await response.json();
 
     const energiaList = document.getElementById('energia-list');
@@ -9,8 +9,8 @@ async function carregarProdutos() {
         const li = document.createElement('li');
 
         li.innerHTML = `
-            <a href="produto.html?id=${produto.id}">
-                <img src="img/catalogo/produtos/${produto.id}.png" alt="${produto.titulo}">
+            <a href="../produto/index.html?id=${produto.id}">
+                <img src="../img/catalogo/produtos/${produto.id}.png" alt="${produto.titulo}">
                 <div class="card-info">
                     <span class="card-titulo">${produto.titulo}</span>
                     <span class="card-subtitulo">${produto.subtitulo ?? ''}</span>

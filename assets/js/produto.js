@@ -10,10 +10,10 @@ const coresMapa = {
 };
 
 const certsMapa = {
-    'inmetro': 'img/certificados/logo/inmetro.png',
-    'bureau veritas': 'img/certificados/logo/bureau.png',
-    'anatel': 'img/certificados/logo/anatel.png',
-    'tuvnord': 'img/certificados/logo/tuvnord.png',
+    'inmetro': '../img/certificados/logo/inmetro.png',
+    'bureau veritas': '../img/certificados/logo/bureau.png',
+    'anatel': '../img/certificados/logo/anatel.png',
+    'tuvnord': '../img/certificados/logo/tuvnord.png',
 };
 
 const especsMapa = [
@@ -35,12 +35,12 @@ async function carregarProduto() {
     const params = new URLSearchParams(window.location.search);
     const id = parseInt(params.get('id'));
 
-    const response = await fetch('cabos.json');
+    const response = await fetch('../cabos.json');
     const produtos = await response.json();
     const produto = produtos.find(p => p.id === id);
 
     const hero = document.querySelector('.produto-hero');
-    hero.style.backgroundImage = `url('img/produto/${produto.id}.png')`;
+    hero.style.backgroundImage = `url('../img/produto/${produto.id}.png')`;
 
     if (!produto) return;
 
@@ -100,7 +100,7 @@ async function carregarProduto() {
                 cert = "inmetro";
             }
 
-            const pdfUrl = `img/certificados/doc/${cert}/${id}.pdf`;
+            const pdfUrl = `../img/certificados/doc/${cert}/${id}.pdf`;
 
             let existe = false;
 
