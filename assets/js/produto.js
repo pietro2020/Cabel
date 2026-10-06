@@ -39,8 +39,8 @@ async function carregarProduto() {
     const produtos = await response.json();
     const produto = produtos.find(p => p.id === id);
 
-    const hero = document.querySelector('.produto-hero');
-    hero.style.backgroundImage = `url('../img/produto/${produto.id}.png')`;
+    document.getElementById('produto-img').src = `../img/produto/${produto.id}.png`;
+
 
     if (!produto) return;
 
