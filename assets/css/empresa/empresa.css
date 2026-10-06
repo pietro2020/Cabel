@@ -309,6 +309,10 @@
         align-items: flex-end;
     }
 
+    .unidades-titulo div img {
+        width: 100%;
+    }
+
     .logos-list li a img {
         height: 52px;
         width: 52px;
