@@ -59,10 +59,15 @@ html {
     font-weight: 500;
     padding: 10px 15px;
     background-color: var(--primary);
-    color: var(--color-white);
     display: flex;
     justify-content: flex-end;
     gap: 1px;
+}
+
+.contatos,
+.contatos a,
+.contatos a[href^="tel:"] {
+    color: var(--color-white);
 }
 
 .contatos span {
