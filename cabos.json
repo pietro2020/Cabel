@@ -140,6 +140,64 @@
   },
   {
     "id": 6,
+    "tipo": "energia",
+    "titulo": "CABO FLEX ATOX",
+    "subtitulo": "750 V",
+    "texto": "Os Cabos Flexíveis Atox 750 V Cabel são indicados para instalações elétricas de baixa tensão que exigem maior segurança. Possuem isolação livre de halogênios, com baixa emissão de fumaça e gases tóxicos em caso de incêndio. Sua composição contribui para reduzir os riscos às pessoas, aos equipamentos e às instalações.",
+    "cores": [
+      "preto",
+      "azul",
+      "branco",
+      "verde",
+      "amarelo",
+      "vermelho",
+      "cinza"
+    ],
+    "certificados": [
+      "tuvnord"
+    ],
+    "condutores": "Fios de cobre",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Composto termoplástico não halogenado (LSHF/A)",
+    "cobertura": null,
+    "veias": null,
+    "nucleo": null,
+    "resolucao": null,
+    "classe_de_tensao": "750V",
+    "encordoamento": "Classe 4 ou 5",
+    "temperatura_maxima": "70 °C",
+    "normas_aplicaveis": "NBR NM 280, NBR 5410, NBR 13248"
+  },
+  {
+    "id": 7,
+    "tipo": "energia",
+    "titulo": "CABO FLEX ATOX",
+    "subtitulo": "0,6/1 kV",
+    "texto": "O Cabo Flexível ATOX 0,6/1 kV 90 °C Cabel é indicado para instalações elétricas de baixa tensão. Desenvolvido para aplicações que exigem segurança e desempenho em temperaturas elevadas. Possui isolação livre de halogênios, com baixa emissão de fumaça e gases tóxicos em caso de incêndio. Sua composição contribui para proteger as pessoas, os equipamentos e as instalações.",
+    "cores": [
+      "preto",
+      "azul",
+      "verde"
+    ],
+    "certificados": [
+      "tuvnord"
+    ],
+    "condutores": "Fios de cobre",
+    "condutoresAlimentacao": null,
+    "condutoresCoaxial": null,
+    "isolacao": "Composto termofixo XLPE",
+    "cobertura": "Composto Termoplástico não-halogenado (SHF1)",
+    "veias": null,
+    "nucleo": null,
+    "resolucao": null,
+    "classe_de_tensao": "0,6/1 kV",
+    "encordoamento": null,
+    "temperatura_maxima": "90 °C",
+    "normas_aplicaveis": "NBR NM 280, NBR 5410, NBR 13248"
+  },
+  {
+    "id": 8,
     "tipo": "solar",
     "titulo": "CABO FOTOVOLTAICO",
     "subtitulo": "1,8kV CC",
@@ -166,7 +224,7 @@
     "normas_aplicaveis": "NBR NM 280, NBR 16612, NBR 16690 da ABNT"
   },
   {
-    "id": 7,
+    "id": 9,
     "tipo": "telecom",
     "titulo": "CABO COAXIAL RF",
     "subtitulo": null,
@@ -192,7 +250,7 @@
     "normas_aplicaveis": []
   },
   {
-    "id": 8,
+    "id": 10,
     "tipo": "telecom",
     "titulo": "CABO COAXIAL",
     "subtitulo": "Série 06",
@@ -217,7 +275,7 @@
     "normas_aplicaveis": []
   },
   {
-    "id": 9,
+    "id": 11,
     "tipo": "telecom",
     "titulo": "CABO COAXIAL",
     "subtitulo": "Série 59",
@@ -242,7 +300,7 @@
     "normas_aplicaveis": []
   },
   {
-    "id": 10,
+    "id": 12,
     "tipo": "telecom",
     "titulo": "CABO DE ALARME",
     "subtitulo": "Multicores - 6 Vias",
@@ -274,7 +332,7 @@
     "normas_aplicaveis": []
   },
   {
-    "id": 11,
+    "id": 13,
     "tipo": "telecom",
     "titulo": "CABO DE ALARME",
     "subtitulo": "Multicores - 4 Vias",
@@ -304,7 +362,7 @@
     "normas_aplicaveis": []
   },
   {
-    "id": 12,
+    "id": 14,
     "tipo": "telecom",
     "titulo": "CABO DE REDE CAT5e",
     "subtitulo": "U/UTP CMX",
@@ -331,7 +389,7 @@
     "normas_aplicaveis": "ANSI/TIA– 568.2-D, NBR 14703, NBR 14705, UL 444, ISO/IEC 11801, NBR 14565, NBR 16521, NBR 16264. REQUISITOS ANATEL – CATEGORIA 1."
   },
   {
-    "id": 13,
+    "id": 15,
     "tipo": "telecom",
     "titulo": "CABO DE REDE CAT5e",
     "subtitulo": "F/UTP CMX",
@@ -356,7 +414,7 @@
     "normas_aplicaveis": "ANSI/TIA– 568.2-D, NBR 14703, NBR 14705, UL 444, ISO/IEC 11801, NBR 14565, NBR 16521, NBR 16264. REQUISITOS ANATEL – CATEGORIA 1."
   },
   {
-    "id": 14,
+    "id": 16,
     "tipo": "telecom",
     "titulo": "CABO DE REDE CAT5e",
     "subtitulo": "U/UTP CMX Dupla Capa",
@@ -381,7 +439,7 @@
     "normas_aplicaveis": "ANSI/TIA– 568.2-D, NBR 14703, NBR 14705, UL 444, ISO/IEC 11801, NBR 14565, NBR 16521, NBR 16264. REQUISITOS ANATEL – CATEGORIA 1."
   },
   {
-    "id": 15,
+    "id": 17,
     "tipo": "telecom",
     "titulo": "CABO DE REDE CAT5e",
     "subtitulo": "F/UTP CMX Dupla Capa",
@@ -406,7 +464,7 @@
     "normas_aplicaveis": "ANSI/TIA– 568.2-D, ABNT NBR 14703, ABNT NBR 14705, UL 444, ISO/IEC 11801, NBR 14565, NBR 16521, NBR 16264. REQUISITOS ANATEL – CATEGORIA 1."
   },
   {
-    "id": 16,
+    "id": 18,
     "tipo": "telecom",
     "titulo": "CABO DE REDE CAT6",
     "subtitulo": "U/UTP CM",
@@ -435,7 +493,7 @@
     "normas_aplicaveis": "EIA/TIA– 568-D2, NBR 14703, NBR 14705, NBR 14565, UL 444, ISO/IEC 11801. REQUISITOS ANATEL – CATEGORIA 1."
   },
   {
-    "id": 17,
+    "id": 19,
     "tipo": "telecom",
     "titulo": "CABO DE REDE CAT6",
     "subtitulo": "U/UTP CM Dupla Capa",
@@ -460,7 +518,7 @@
     "normas_aplicaveis": "ANSI/TIA– 568.2-D, NBR 14703, NBR 14705, UL 444, ISO/IEC 11801, NBR 14565, NBR 16521 e NBR 16264. REQUISITOS ANATEL – CATEGORIA 1."
   },
   {
-    "id": 18,
+    "id": 20,
     "tipo": "telecom",
     "titulo": "CABO DE REDE CAT6",
     "subtitulo": "F/UTP CM",
@@ -485,7 +543,7 @@
     "normas_aplicaveis": "ANSI/TIA– 568.2-D, ABNT NBR 14703, ABNT NBR 14705, UL 444, ISO/IEC 11801, NBR 14565, NBR 16521 e NBR 16264. REQUISITOS ANATEL – CATEGORIA 1"
   },
   {
-    "id": 19,
+    "id": 21,
     "tipo": "telecom",
     "titulo": "CABO DE REDE CAT6",
     "subtitulo": " F/UTP CM Dupla Capa",
@@ -510,7 +568,7 @@
     "normas_aplicaveis": "ANSI/TIA– 568.2-D, ABNT NBR 14703, ABNT NBR 14705, UL 444, ISO/IEC 11801, NBR 14565, NBR 16521 e NBR 16264. REQUISITOS ANATEL – CATEGORIA 1."
   },
   {
-    "id": 20,
+    "id": 22,
     "tipo": "telecom",
     "titulo": "CABO DE SEGURANÇA ELETRÔNICA",
     "subtitulo": "2 Pares",
@@ -535,7 +593,7 @@
     "normas_aplicaveis": "Ato n° 8210, de 27 de dezembro de 2019."
   },
   {
-    "id": 21,
+    "id": 23,
     "tipo": "telecom",
     "titulo": "CABO DE SEGURANÇA ELETRÔNICA",
     "subtitulo": "4 Pares",
@@ -562,7 +620,7 @@
     "normas_aplicaveis": "Ato n° 8210, de 27 de dezembro de 2019."
   },
   {
-    "id": 22,
+    "id": 24,
     "tipo": "telecom",
     "titulo": "CABO DE SEGURANÇA ELETRÔNICA",
     "subtitulo": "4 Pares Dupla Capa",
