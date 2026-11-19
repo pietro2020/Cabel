@@ -73,7 +73,7 @@ hr {
 
 main .img {
     min-width: 0;
-    flex: 4;
+    flex: 5;
 }
 
 main .img img {
@@ -106,17 +106,24 @@ main .img img {
 
 /* ---- 768px: tablet ---- */
 @media (max-width: 768px) {
-    .contato {
+    main {
         flex-direction: column;
-        padding: 40px 20px;
-        gap: 24px;
     }
 
-    .contato,
-    .div-form {
+    hr {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .contato {
+        padding: 40px 20px;
         min-width: unset;
         width: 80%;
         align-self: center;
+    }
+
+    .contato > div {
+        width: 100%;
     }
 
     .contato h2 {
