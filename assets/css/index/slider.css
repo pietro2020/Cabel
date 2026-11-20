@@ -120,6 +120,11 @@
     .slider {
         height: 220px;
     }
+
+    .catalogo-btn {
+        border-radius: 5px;
+        letter-spacing: 1.4px;
+    }
 }
 
 /* ---- 480px: mobile pequeno ---- */
